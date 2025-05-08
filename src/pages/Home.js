@@ -20,6 +20,35 @@ import markdownIcon from '../assets/icons/markdown.png';
 import matlabIcon from '../assets/icons/matlab.jpeg';
 import cssIcon from '../assets/icons/css.png';
 import cIcon from '../assets/icons/c.png';
+import reactIcon from '../assets/icons/react.png';
+import unityIcon from '../assets/icons/unity.png';
+import numpyIcon from '../assets/icons/numpy.png';
+import matplotlibIcon from '../assets/icons/matplotlib.png';
+import pandasIcon from '../assets/icons/pandas.png';
+import openaiIcon from '../assets/icons/openai.png';
+import mlflowIcon from '../assets/icons/mlflow.jpeg';
+import condaIcon from '../assets/icons/conda.png';
+import puttyIcon from '../assets/icons/putty.png';
+import shIcon from '../assets/icons/sh.png';
+import pytorchIcon from '../assets/icons/pytorch.png';
+import dotnetIcon from '../assets/icons/dotnet.png';
+import dsaIcon from '../assets/icons/dsa.png';
+import openpyxlIcon from '../assets/icons/openpyxl.png';
+import gitIcon from '../assets/icons/git.png';
+import zapierIcon from '../assets/icons/zapier.png';
+import msofficeIcon from '../assets/icons/msoffice.jpeg';
+import notionIcon from '../assets/icons/notion.png';
+import sapIcon from '../assets/icons/sap.png';
+import quartusIcon from '../assets/icons/quartus.png';
+import jiraIcon from '../assets/icons/jira.jpeg';
+import pspiceIcon from '../assets/icons/pspice.png';
+import vscodeIcon from '../assets/icons/vscode.jpeg';
+import dvcIcon from '../assets/icons/dvc.jpeg';
+import simulinkIcon from '../assets/icons/simulink.jpeg';
+import quarcIcon from '../assets/icons/quarc.jpeg';
+;
+
+
 
 function Home() {
   const [activeTab, setActiveTab] = useState('languages');
@@ -148,7 +177,7 @@ function Home() {
 
   <div className="about-skills">
   <div className="about-skills tech-stack-box">
-  <h2 className="tech-stack-title">🪛 Tech Stack</h2>
+  <h2 className="tech-stack-title">💻 Tech Stack</h2>
 
   <div className="tech-stack-tabs">
     <div className="tab-buttons">
@@ -189,7 +218,7 @@ function Home() {
         <li className="tech-item"><img src={bashIcon} alt="SQL" className="tech-icon" />Bash</li>
         <li className="tech-item"><img src={jsonIcon} alt="SQL" className="tech-icon" />JSON</li>
         <li className="tech-item"><img src={yamlIcon} alt="SQL" className="tech-icon" />YAML</li>
-        <li className="tech-item"><img src={xmlIcon} alt="SQL" className="tech-icon" />XML</li>
+        <li className="tech-item"><img src={xmlIcon} alt="SQL" className="tech-icon" />XML/JSX</li>
         <li className="tech-item"><img src={markdownIcon} alt="SQL" className="tech-icon" />Markdown</li>
         
         </ul>
@@ -197,38 +226,38 @@ function Home() {
 
       {activeTab === 'frameworks' && (
         <ul>
-          <li>React.js</li>
-          <li>PyTorch</li>
-          <li>Unity</li>
-          <li>.NET Development</li>
-          <li>NumPy</li>
-          <li>Matplotlib</li>
-          <li>Pandas</li>
-          <li>openpyxl</li>
-          <li>Shell Scripting (sh)</li>
-          <li>OpenAI API</li>
-          <li>MLFlow</li>
-          <li>Conda</li>
-          <li>PuTTy/WinSCP</li>
-          <li>DSA/OOP</li>
+          <li className="tech-item"><img src={reactIcon} alt="Python" className="tech-icon" />React.js</li>
+          <li className="tech-item"><img src={pytorchIcon} alt="Python" className="tech-icon" />Pytorch</li>
+          <li className="tech-item"><img src={unityIcon} alt="Python" className="tech-icon" />Unity</li>
+          <li className="tech-item"><img src={dotnetIcon} alt="Python" className="tech-icon" />.NET Development</li>
+          <li className="tech-item"><img src={numpyIcon} alt="Python" className="tech-icon" />NumPy</li>
+          <li className="tech-item"><img src={matplotlibIcon} alt="Python" className="tech-icon" />Matplotlib</li>
+          <li className="tech-item"><img src={pandasIcon} alt="Python" className="tech-icon" />Pandas</li>
+          <li className="tech-item"><img src={openpyxlIcon} alt="Python" className="tech-icon" />openpyxl</li>
+          <li className="tech-item"><img src={shIcon} alt="Python" className="tech-icon" />Shell Scripting (sh)</li>
+          <li className="tech-item"><img src={openaiIcon} alt="Python" className="tech-icon" />OpenAI API</li>
+          <li className="tech-item"><img src={mlflowIcon} alt="Python" className="tech-icon" />MLflow</li>
+          <li className="tech-item"><img src={condaIcon} alt="Python" className="tech-icon" />Conda</li>
+          <li className="tech-item"><img src={puttyIcon} alt="Python" className="tech-icon" />PuTTy/WinSCP</li>
+          <li className="tech-item"><img src={dsaIcon} alt="Python" className="tech-icon" />DSA/OOP</li>
 
         </ul>
       )}
 
       {activeTab === 'software' && (
         <ul>
-          <li>Git/GitHub</li>
-          <li>Data Version Control</li>
-          <li>VS Code</li>
-          <li>Zapier</li>
-          <li>Pspice</li>
-          <li>Simulink</li>
-          <li>Jira/Bitbucket</li>
-          <li>Microsoft Office</li>
-          <li>Notion</li>
-          <li>Sap</li>
-          <li>Quartus Modelsim</li>
-          <li>Quanser QUARC</li>
+          <li className="tech-item"><img src={gitIcon} alt="Python" className="tech-icon" />Git/GitHub</li>
+          <li className="tech-item"><img src={dvcIcon} alt="Python" className="tech-icon" />Data Version Control</li>
+          <li className="tech-item"><img src={vscodeIcon} alt="Python" className="tech-icon" />Visual Studio Code</li>
+          <li className="tech-item"><img src={zapierIcon} alt="Python" className="tech-icon" />Zapier</li>
+          <li className="tech-item"><img src={pspiceIcon} alt="Python" className="tech-icon" />Pspice</li>
+          <li className="tech-item"><img src={simulinkIcon} alt="Python" className="tech-icon" />Simulink</li>
+          <li className="tech-item"><img src={jiraIcon} alt="Python" className="tech-icon" />Jira/Bitbucket</li>
+          <li className="tech-item"><img src={msofficeIcon} alt="Python" className="tech-icon" />Microsoft Office</li>
+          <li className="tech-item"><img src={notionIcon} alt="Python" className="tech-icon" />Notion </li>
+          <li className="tech-item"><img src={sapIcon} alt="Python" className="tech-icon" />SAP</li>
+          <li className="tech-item"><img src={quartusIcon} alt="Python" className="tech-icon" />Quartus Modelsim</li>
+          <li className="tech-item"><img src= {quarcIcon} alt="Python" className="tech-icon" />Quanser QUARC</li>
         </ul>
       )}
     </div>
