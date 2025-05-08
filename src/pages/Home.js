@@ -53,14 +53,16 @@ function Home() {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible'); // <-- ✨ allow repeated fade-ins
           }
         });
       },
       { threshold: 0.1 }
     );
-
+  
     sections.forEach(section => observer.observe(section));
-
+  
     return () => {
       sections.forEach(section => observer.unobserve(section));
     };
@@ -108,13 +110,29 @@ function Home() {
       </section>
 
       <section id="about" className="about-section fade-in-on-scroll">
-        <h2>About Me</h2>
-        <p>
-          I'm a Computer Engineering student with a deep passion for software development and AI/ML. <br />
-          I enjoy crafting intuitive interfaces and solving real-world problems through code.
-          Outside of academics, I’ve worked on machine learning projects, Unity games, and full-stack web apps.
-        </p>
-      </section>
+  <div className="about-container">
+    <div className="about-text">
+      <h2>About Me</h2>
+      <p>
+        I'm a Computer Engineering student with a deep passion for software development and AI/ML. <br />
+        I enjoy crafting intuitive interfaces and solving real-world problems through code. <br />
+        Outside of academics, I’ve worked on machine learning projects, Unity games, and full-stack web apps.
+      </p>
+    </div>
+
+    <div className="about-skills">
+      <h2>⚙️ Tech Stack</h2>
+      <ul>
+        <li>💻 JavaScript (React), HTML/CSS</li>
+        <li>🧠 Python (NumPy, PyTorch, scikit-learn)</li>
+        <li>🛠 C/C++ and C# (Unity)</li>
+        <li>🗃 SQL & Firebase</li>
+        <li>🔧 Git, GitHub, GitLab</li>
+        <li>🚀 APIs, DVC, Docker (basics)</li>
+      </ul>
+    </div>
+  </div>
+</section>
     </>
   );
 }

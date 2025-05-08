@@ -215,17 +215,17 @@ nav a:hover {
 }
 
 .about-section {
-  min-height: 100vh;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 60px 20px;
-  border-radius: 16px;
-  max-width: 900px;
-  margin: 0 auto;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  min-height: 90vh;
+  padding: 40px 40px 20px; /* reduced top and bottom padding */
   font-family: 'Segoe UI', sans-serif;
-  color: #000;
+  color: white;
   text-align: center;
+  display: flex;
+  align-items: flex-start; /* ⬅️ changed from center */
+  justify-content: center;
 }
+
+
 
 .about-section h2 {
   font-size: 48px;
@@ -259,3 +259,40 @@ nav a:hover {
     opacity: 1;
   }
 }
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.about-text,
+.about-skills {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.about-text h2,
+.about-skills h2 {
+  font-family: 'Courier New', monospace;
+  font-size: 36px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.about-skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-skills li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  position: relative;
+}
+
