@@ -216,10 +216,11 @@ function Home() {
         <li className="tech-item"><img src={vhdlIcon} alt="SQL" className="tech-icon" />VHDL</li>
         <li className="tech-item"><img src={matlabIcon} alt="HTML/CSS" className="tech-icon" />Matlab</li>
         <li className="tech-item"><img src={bashIcon} alt="SQL" className="tech-icon" />Bash</li>
-        <li className="tech-item"><img src={jsonIcon} alt="SQL" className="tech-icon" />JSON</li>
+        <li className="tech-item"><img src={markdownIcon} alt="SQL" className="tech-icon" />Markdown</li>
         <li className="tech-item"><img src={yamlIcon} alt="SQL" className="tech-icon" />YAML</li>
         <li className="tech-item"><img src={xmlIcon} alt="SQL" className="tech-icon" />XML/JSX</li>
-        <li className="tech-item"><img src={markdownIcon} alt="SQL" className="tech-icon" />Markdown</li>
+        <li className="tech-item"><img src={jsonIcon} alt="SQL" className="tech-icon" />JSON</li>
+        
         
         </ul>
       )}
@@ -228,17 +229,18 @@ function Home() {
         <ul>
           <li className="tech-item"><img src={reactIcon} alt="Python" className="tech-icon" />React.js</li>
           <li className="tech-item"><img src={pytorchIcon} alt="Python" className="tech-icon" />Pytorch</li>
-          <li className="tech-item"><img src={unityIcon} alt="Python" className="tech-icon" />Unity</li>
-          <li className="tech-item"><img src={dotnetIcon} alt="Python" className="tech-icon" />.NET Development</li>
-          <li className="tech-item"><img src={numpyIcon} alt="Python" className="tech-icon" />NumPy</li>
+
           <li className="tech-item"><img src={matplotlibIcon} alt="Python" className="tech-icon" />Matplotlib</li>
+          <li className="tech-item"><img src={dotnetIcon} alt="Python" className="tech-icon" />.NET</li>
+          <li className="tech-item"><img src={numpyIcon} alt="Python" className="tech-icon" />NumPy</li>
+          <li className="tech-item"><img src={unityIcon} alt="Python" className="tech-icon" />Unity</li>
           <li className="tech-item"><img src={pandasIcon} alt="Python" className="tech-icon" />Pandas</li>
           <li className="tech-item"><img src={openpyxlIcon} alt="Python" className="tech-icon" />openpyxl</li>
           <li className="tech-item"><img src={shIcon} alt="Python" className="tech-icon" />Shell Scripting (sh)</li>
           <li className="tech-item"><img src={openaiIcon} alt="Python" className="tech-icon" />OpenAI API</li>
           <li className="tech-item"><img src={mlflowIcon} alt="Python" className="tech-icon" />MLflow</li>
           <li className="tech-item"><img src={condaIcon} alt="Python" className="tech-icon" />Conda</li>
-          <li className="tech-item"><img src={puttyIcon} alt="Python" className="tech-icon" />PuTTy/WinSCP</li>
+          <li className="tech-item"><img src={puttyIcon} alt="Python" className="tech-icon" />PuTTy</li>
           <li className="tech-item"><img src={dsaIcon} alt="Python" className="tech-icon" />DSA/OOP</li>
 
         </ul>
