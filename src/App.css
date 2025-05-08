@@ -267,21 +267,33 @@ nav a:hover {
   flex-wrap: wrap;
   gap: 40px;
   margin-top: 40px;
+  column-gap: 100px;
+  
 }
 
-.about-text,
-.about-skills {
-  flex: 1;
-  min-width: 300px;
+.about-text {
+  flex: 1.5;
+  min-width: 320px;
   text-align: left;
 }
 
-.about-text h2,
+.about-skills {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.about-text h2{
+  color: white;
+  margin-top: 7px;
+}
 .about-skills h2 {
   font-family: 'Courier New', monospace;
   font-size: 36px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: left;
+  margin-top: 5px;
+  color: black;
 }
 
 .about-skills ul {
@@ -295,4 +307,74 @@ nav a:hover {
   padding-left: 5px;
   position: relative;
 }
+
+.tech-stack-tabs {
+  width: 100%;
+  text-align: left;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tab-buttons button {
+  padding: 6px 14px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.tab-buttons button.active {
+  border-bottom: 2px solid red;
+  color: red;
+}
+
+.tab-content ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr)); /* two responsive columns */
+  gap: 10px 30px; /* row and column gap */
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+
+.tab-content li {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.tech-stack-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  height: 72vh;
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.tech-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 
