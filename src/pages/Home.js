@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
-import myPhoto from '../assets/michael.jpg'
+import myPhoto from '../assets/michael.jpg';
 import githubIcon from '../assets/icons/github.jpeg';
 import linkedinIcon from '../assets/icons/linkedin.png';
 import gmailIcon from '../assets/icons/gmail.png';
 import { Link } from 'react-router-dom';
-
-
 
 function Home() {
   const line1 = "Hi there, I'm Michael Khoury.";
@@ -48,6 +46,26 @@ function Home() {
     typeLine2();
   }, [showLine2]);
 
+  useEffect(() => {
+    const sections = document.querySelectorAll('.fade-in-on-scroll');
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+
+    return () => {
+      sections.forEach(section => observer.unobserve(section));
+    };
+  }, []);
+
   return (
     <div className="page-container">
       <h1 className="greeting">
@@ -60,42 +78,43 @@ function Home() {
       </p>
 
       {showImage && (
-        <>
+        <div className="profile-links-row">
           <img
             src={myPhoto}
             alt="Michael Khoury"
             className="profile-pic fade-in"
           />
           <div className="quick-links fade-in">
-          <h2 className="quick-links-title">Quick Links</h2>  
+            <h2 className="quick-links-title">Quick Links</h2>
             <a href="https://github.com/Michael-Khoury" target="_blank" rel="noopener noreferrer">
-            <img src={githubIcon} alt="GitHub" className="icon-img" /> Visit my GitHub
-
+              <img src={githubIcon} alt="GitHub" className="icon-img" /> Visit my GitHub
             </a>
             <a href="https://www.linkedin.com/in/-khoury/" target="_blank" rel="noopener noreferrer">
-            <img src={linkedinIcon} alt="LinkedIn" className="icon-img" /> Connect with me on LinkedIn
-
+              <img src={linkedinIcon} alt="LinkedIn" className="icon-img" /> Connect with me on LinkedIn
             </a>
             <a href="/michaelkhouryresume.pdf" download>
-            <span className="icon">📄</span> Download my resume
+              <span className="icon">📄</span> Download my resume
             </a>
-
             <a href="https://mail.google.com/mail/?view=cm&to=mkhoury@mun.ca" target="_blank" rel="noopener noreferrer">
-            <img src={gmailIcon} alt="Gmail" className="icon-img" /> Email me
+              <img src={gmailIcon} alt="Gmail" className="icon-img" /> Email me
             </a>
-
-
             <Link to="/projects">
-            <span className="icon">💻</span> Explore my projects
+              <span className="icon">💻</span> Explore my projects
             </Link>
-
           </div>
-        </>
+        </div>
       )}
+
+      <div id="about" className="about-section fade-in-on-scroll">
+        <h2>About Me</h2>
+        <p>
+          I'm a Computer Engineering student with a deep passion for software development and AI/ML. <br />
+          I enjoy crafting intuitive interfaces and solving real-world problems through code.
+          Outside of academics, I’ve worked on machine learning projects, Unity games, and full-stack web apps.
+        </p>
+      </div>
     </div>
-    
   );
-  
 }
 
 export default Home;
