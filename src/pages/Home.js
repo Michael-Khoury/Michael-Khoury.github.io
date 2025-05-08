@@ -67,53 +67,55 @@ function Home() {
   }, []);
 
   return (
-    <div className="page-container">
-      <h1 className="greeting">
-        {text1}
-        {showLine1Cursor && <span className="cursor">|</span>}
-      </h1>
-      <p className="typed-subline">
-        {text2}
-        {showLine2 && <span className="cursor-black">|</span>}
-      </p>
+    <>
+      <section className="home-section">
+        <h1 className="greeting">
+          {text1}
+          {showLine1Cursor && <span className="cursor">|</span>}
+        </h1>
+        <p className="typed-subline">
+          {text2}
+          {showLine2 && <span className="cursor-black">|</span>}
+        </p>
 
-      {showImage && (
-        <div className="profile-links-row">
-          <img
-            src={myPhoto}
-            alt="Michael Khoury"
-            className="profile-pic fade-in"
-          />
-          <div className="quick-links fade-in">
-            <h2 className="quick-links-title">Quick Links</h2>
-            <a href="https://github.com/Michael-Khoury" target="_blank" rel="noopener noreferrer">
-              <img src={githubIcon} alt="GitHub" className="icon-img" /> Visit my GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/-khoury/" target="_blank" rel="noopener noreferrer">
-              <img src={linkedinIcon} alt="LinkedIn" className="icon-img" /> Connect with me on LinkedIn
-            </a>
-            <a href="/michaelkhouryresume.pdf" download>
-              <span className="icon">📄</span> Download my resume
-            </a>
-            <a href="https://mail.google.com/mail/?view=cm&to=mkhoury@mun.ca" target="_blank" rel="noopener noreferrer">
-              <img src={gmailIcon} alt="Gmail" className="icon-img" /> Email me
-            </a>
-            <Link to="/projects">
-              <span className="icon">💻</span> Explore my projects
-            </Link>
+        {showImage && (
+          <div className="profile-links-row">
+            <img
+              src={myPhoto}
+              alt="Michael Khoury"
+              className="profile-pic fade-in"
+            />
+            <div className="quick-links fade-in">
+              <h2 className="quick-links-title">Quick Links</h2>
+              <a href="https://github.com/Michael-Khoury" target="_blank" rel="noopener noreferrer">
+                <img src={githubIcon} alt="GitHub" className="icon-img" /> Visit my GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/-khoury/" target="_blank" rel="noopener noreferrer">
+                <img src={linkedinIcon} alt="LinkedIn" className="icon-img" /> Connect with me on LinkedIn
+              </a>
+              <a href="/michaelkhouryresume.pdf" download>
+                <span className="icon">📄</span> Download my resume
+              </a>
+              <a href="https://mail.google.com/mail/?view=cm&to=mkhoury@mun.ca" target="_blank" rel="noopener noreferrer">
+                <img src={gmailIcon} alt="Gmail" className="icon-img" /> Email me
+              </a>
+              <Link to="/projects">
+                <span className="icon">💻</span> Explore my projects
+              </Link>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </section>
 
-      <div id="about" className="about-section fade-in-on-scroll">
+      <section id="about" className="about-section fade-in-on-scroll">
         <h2>About Me</h2>
         <p>
           I'm a Computer Engineering student with a deep passion for software development and AI/ML. <br />
           I enjoy crafting intuitive interfaces and solving real-world problems through code.
           Outside of academics, I’ve worked on machine learning projects, Unity games, and full-stack web apps.
         </p>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
 

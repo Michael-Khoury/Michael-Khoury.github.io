@@ -205,14 +205,22 @@ nav a:hover {
   font-weight: normal;
 }
 
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* leave space for navbar */
+  padding-top: 80px; /* match navbar height */
+}
+
 .about-section {
-  margin-top: 100px;
+  min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.85);
-  padding: 40px;
+  padding: 60px 20px;
   border-radius: 16px;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   font-family: 'Segoe UI', sans-serif;
   color: #000;
