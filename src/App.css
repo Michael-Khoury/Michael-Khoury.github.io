@@ -112,7 +112,7 @@ nav a:hover {
   font-family: 'Segoe UI', sans-serif;
   font-size: 14px;
   padding-bottom: 95px;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 .quick-links-title {
