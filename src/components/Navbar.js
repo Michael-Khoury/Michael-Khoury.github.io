@@ -1,15 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/mk-logo.png'; // ✅ your logo
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
+   const navRef = useRef();
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener('click', handleClickOutside);
+    return () => window.removeEventListener('click', handleClickOutside);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" ref={navRef}>
   <div className="navbar-left">
     <Link to="/" className="logo-only-link" onClick={() => setIsOpen(false)}>
       <img src={logo} alt="MK Logo" className="logo-img" />
