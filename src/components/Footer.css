@@ -30,3 +30,11 @@
 .footer-icon:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 500px) {
+  .site-footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

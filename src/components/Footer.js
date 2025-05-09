@@ -13,13 +13,13 @@ function Footer() {
       </div>
       <div className="footer-right">
         <a href="https://github.com/Michael-Khoury" target="_blank" rel="noopener noreferrer">
-          <img src={githubIcon} alt="GitHub" className="footer-icon" />
+          <img src={githubIcon} alt="GitHub" className="footer-icon" title=" My GitHub"/>
         </a>
         <a href="https://mail.google.com/mail/?view=cm&to=mkhoury@mun.ca">
-          <img src={gmailIcon} alt="Email" className="footer-icon" />
+          <img src={gmailIcon} alt="Email" className="footer-icon" title="Email me" />
         </a>
         <a href="https://www.linkedin.com/in/-khoury/" target="_blank" rel="noopener noreferrer">
-          <img src={linkedinIcon} alt="LinkedIn" className="footer-icon" />
+          <img src={linkedinIcon} alt="LinkedIn" className="footer-icon" title="My LinkedIn" />
         </a>
       </div>
     </footer>

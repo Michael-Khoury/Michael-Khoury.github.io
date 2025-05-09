@@ -88,3 +88,20 @@
     transform: rotate(-45deg) translateY(-7px);
   }
   
+
+  @media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 40px;
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+}
+
