@@ -437,3 +437,16 @@ nav a:hover {
   }
 }
 
+/* At the bottom of App.css */
+html, body, #root, .App {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App > .site-footer {
+  margin-top: auto;
+}

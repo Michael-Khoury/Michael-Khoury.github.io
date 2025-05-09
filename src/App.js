@@ -6,6 +6,7 @@ import WorkExperience from './pages/WorkExperience';
 import Projects from './pages/Projects';
 import ContactMe from './pages/ContactMe';
 import Resume from './pages/Resume';
+import Footer from './components/Footer'; 
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<ContactMe />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

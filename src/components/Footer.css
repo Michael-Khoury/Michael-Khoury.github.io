@@ -1,0 +1,32 @@
+/* components/Footer.css */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  border-top: 1px solid white;
+  margin-top: 40px;
+  flex-shrink: 0;
+}
+
+.footer-left {
+  color: black;
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icon {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.2s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+}
