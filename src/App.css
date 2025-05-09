@@ -436,3 +436,40 @@ nav a:hover {
     padding: 20px;
   }
 }
+
+.tech-item {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideInFromLeft 0.4s ease-out forwards;
+}
+
+/* Delay each item slightly */
+.tech-item:nth-child(1) { animation-delay: 0.05s; }
+.tech-item:nth-child(2) { animation-delay: 0.1s; }
+.tech-item:nth-child(3) { animation-delay: 0.15s; }
+.tech-item:nth-child(4) { animation-delay: 0.2s; }
+.tech-item:nth-child(5) { animation-delay: 0.25s; }
+.tech-item:nth-child(6) { animation-delay: 0.3s; }
+.tech-item:nth-child(7) { animation-delay: 0.35s; }
+.tech-item:nth-child(8) { animation-delay: 0.4s; }
+.tech-item:nth-child(9) { animation-delay: 0.45s; }
+.tech-item:nth-child(10) { animation-delay: 0.5s; }
+.tech-item:nth-child(11) { animation-delay: 0.55s; }
+.tech-item:nth-child(12) { animation-delay: 0.6s; }
+.tech-item:nth-child(13) { animation-delay: 0.65s; }
+.tech-item:nth-child(14) { animation-delay: 0.7s; }
+.tech-item:nth-child(15) { animation-delay: 0.75s; }
+.tech-item:nth-child(16) { animation-delay: 0.8s; }
+
+
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

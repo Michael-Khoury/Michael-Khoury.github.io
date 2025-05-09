@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import myPhoto from '../assets/michael.jpg';
-import githubIcon from '../assets/icons/github.png';
+import githubIcon from '../assets/icons/github.jpeg';
 import linkedinIcon from '../assets/icons/linkedin.png';
 import gmailIcon from '../assets/icons/gmail.png';
 import { Link } from 'react-router-dom';
