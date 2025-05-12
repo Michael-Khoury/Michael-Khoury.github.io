@@ -15,7 +15,6 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* Optional mobile tweak */
 @media (max-width: 768px) {
   .resume-container {
     height: 80vh;

@@ -1,7 +1,7 @@
 // pages/Resume.js
 import React from 'react';
 import './Resume.css';
-import resumePDF from '../assets/michaelkhouryresume.pdf'; // ✅ make sure the file path matches your assets
+import resumePDF from '../assets/michaelkhouryresume.pdf'; 
 
 function Resume() {
   return (
