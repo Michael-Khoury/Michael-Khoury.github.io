@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/mk-logo.png';
 
@@ -8,6 +8,7 @@ function Navbar() {
   const navRef = useRef();
   const location = useLocation();
   const toggleMenu = () => setIsOpen(!isOpen);
+  const navigate = useNavigate();
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -52,7 +53,23 @@ function Navbar() {
 
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <Link to="/" onClick={(e) => handleLinkClick(e, '/')}>Home</Link>
-        <Link to="/about" onClick={(e) => handleLinkClick(e, '/about')}>About Me</Link>
+        <a
+          href="/#about"
+          onClick={(e) => {
+            e.preventDefault();
+            setIsOpen(false);
+            if (location.pathname !== '/') {
+              navigate('/', { state: { scrollTo: 'about' } });
+            } else {
+              const aboutSection = document.getElementById('about');
+              if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }
+          }}
+        >
+          About Me
+        </a>
         <Link to="/work" onClick={(e) => handleLinkClick(e, '/work')}>Work Experience</Link>
         <Link to="/projects" onClick={(e) => handleLinkClick(e, '/projects')}>Projects</Link>
         <Link to="/contact" onClick={(e) => handleLinkClick(e, '/contact')}>Contact Me</Link>

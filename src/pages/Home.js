@@ -46,6 +46,8 @@ import vscodeIcon from '../assets/icons/vscode.jpeg';
 import dvcIcon from '../assets/icons/dvc.jpeg';
 import simulinkIcon from '../assets/icons/simulink.jpeg';
 import quarcIcon from '../assets/icons/quarc.jpeg';
+import { useLocation } from 'react-router-dom';
+
 ;
 
 
@@ -62,6 +64,23 @@ function Home() {
   const [showLine1Cursor, setShowLine1Cursor] = useState(true);
   const [showLine2, setShowLine2] = useState(false);
   const [showImage, setShowImage] = useState(false);
+
+  const location = useLocation();
+
+useEffect(() => {
+  if (location.state && location.state.scrollTo === 'about') {
+    const section = document.getElementById('about');
+    if (section) {
+      setTimeout(() => {
+        section.scrollIntoView({ behavior: 'smooth' });
+        window.history.replaceState({}, '');
+      }, 100); // slight delay ensures DOM is rendered
+    }
+  }
+}, [location]);
+
+
+  
 
   useEffect(() => {
     let index1 = 0;
