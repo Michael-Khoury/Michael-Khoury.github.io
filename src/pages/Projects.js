@@ -23,7 +23,7 @@ function Projects() {
           Includes a boss wave, main menu system, and smooth launch flow with multiple completed releases to date.
           Recognized as one of the top 2 projects in the course in the Winter 2025 semester for its functionality, gameplay depth, and clean architecture. 
 
-          Note: This is a github repository is private to protect ongoing development, with plans to continue improving and potentially market the game. A demo or walkthrough is available upon request.
+          Note: This github repository is private to protect ongoing development, with plans to continue improving and potentially market the game. A demo or walkthrough is available upon request.
         </p>
         <p className="tech-heading">Skills or Technologies I used:</p>
         <div className="tech-chips">
