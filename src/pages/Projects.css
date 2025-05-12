@@ -1,0 +1,129 @@
+.projects-title {
+  font-size: 3rem;
+  font-family: 'Courier New', monospace;
+  color: black;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.no-padding {
+  padding: 0;
+}
+
+.project-block {
+  padding: 50px 40px;
+  color: black;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.project-block h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.project-block p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 1000px;
+}
+
+.tech-heading {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-chips span {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: inherit;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 2px solid currentColor;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Vibrant block colors */
+.color1 { background-color: #FFE082; }  /* light yellow */
+.color2 { background-color: #B2EBF2; }  /* light cyan */
+.color3 { background-color: #C8E6C9; }  /* light green */
+.color4 { background-color: #D1C4E9; }  /* light purple */
+.color5 { background-color: #FFCDD2; }  /* light pink */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-block {
+    padding: 30px 20px;
+  }
+
+  .project-block h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-block p {
+    font-size: 1rem;
+  }
+}
+
+
+.projects-header {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projects-header .greeting {
+  font-size: clamp(1rem, 5vw, 3rem);
+  font-family: 'Courier New', monospace;
+  font-style: bold;
+  color: white;
+  margin-bottom: 50px;
+  margin-top: 5px;
+}
+
+.projects-header .typed-subline {
+  font-size: clamp(1rem, 4.5vw, 2rem);
+  font-weight: bold;
+  color: black;
+  font-family: 'Courier New', monospace;
+  margin-top: 0;
+}
+
+.project-screenshot {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.github-button {
+  display: inline-block;
+  margin-top: 30px;
+  
+  background-color: transparent;
+  color: black;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 999px;
+  border: 2px solid currentColor;
+}
+
+.github-button:hover {
+  background-color: #444c56;
+}
+
