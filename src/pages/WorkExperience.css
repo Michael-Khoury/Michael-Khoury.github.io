@@ -1,0 +1,113 @@
+.experience-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 40px;
+  color: black;
+  font-family: 'Segoe UI', sans-serif;
+  gap: 20px;
+}
+
+.experience-left {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+.experience-right {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-width: 200px;
+}
+
+.experience-block h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.experience-block p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.experience-logo {
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.experience-photo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.tech-heading {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tech-chips span {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: inherit;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 2px solid currentColor;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Reuse block colors from projects */
+.color1 { background-color: #FFE082; }
+.color2 { background-color: #C8E6C9; }
+.color3 { background-color: #B2EBF2; }
+.color4 { background-color: #D1C4E9; }
+.color5 { background-color: #FFCDD2; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-block {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .experience-left,
+  .experience-right {
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  .experience-block h2 {
+    font-size: 1.5rem;
+  }
+
+  .experience-block p {
+    font-size: 1rem;
+  }
+}
+
+.date-range {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}

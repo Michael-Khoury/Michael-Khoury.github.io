@@ -70,10 +70,12 @@ function Navbar() {
         >
           About Me
         </a>
-        <Link to="/work" onClick={(e) => handleLinkClick(e, '/work')}>Work Experience</Link>
         <Link to="/projects" onClick={(e) => handleLinkClick(e, '/projects')}>Projects</Link>
+        <Link to="/work" onClick={(e) => handleLinkClick(e, '/work')}>Work Experience</Link>
+        
+                <Link to="/resume" onClick={(e) => handleLinkClick(e, '/resume')}>Resume</Link>
         <Link to="/contact" onClick={(e) => handleLinkClick(e, '/contact')}>Contact Me</Link>
-        <Link to="/resume" onClick={(e) => handleLinkClick(e, '/resume')}>Resume</Link>
+
       </div>
     </nav>
   );

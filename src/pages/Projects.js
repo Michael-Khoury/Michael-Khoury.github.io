@@ -21,7 +21,7 @@ function Projects() {
           Developed a polished 2D tower defense game in Unity with two teammates as part of a software design course during my fifth of eight academic semesters in my computer engineering degree.
           Features include an endless wave system, diverse enemy types with unique behaviors, and several strategically distinct towers with powerful abilities (e.g., splash damage, burn effects, curses).
           Includes a boss wave, main menu system, and smooth launch flow with multiple completed releases to date.
-          Recognized as one of the top 2 projects in the course in the Winter 2025 semester for its functionality, gameplay depth, and clean architecture. 
+          Recognized as one of the top 2 projects in the course in the Winter 2025 semester for its functionality, gameplay depth, and clean architecture.  <br /><br />
 
           Note: This github repository is private to protect ongoing development, with plans to continue improving and potentially market the game. A demo or walkthrough is available upon request.
         </p>
@@ -97,7 +97,8 @@ function Projects() {
         <p>
           Developed a Python script for integrating data version control (DVC) into machine learning workflows during my part time work as a Machine Learning Software Developer at VAC Lab.
           Achieved reproducible and efficient ML experiments using YAML configurations and MLflow.
-          Collaborated with a research team to improve accuracy for medical imaging datasets.
+          Collaborated with a research team to improve accuracy for medical imaging datasets.  <br /><br />
+          Note: This project is based on professional work and thus the GitHub repository cannot be shared publicly due to confidentiality.
         </p>
         <p className="tech-heading">Skills or Technologies I used:</p>
         <div className="tech-chips">

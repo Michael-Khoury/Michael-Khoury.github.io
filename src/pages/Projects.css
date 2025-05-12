@@ -40,6 +40,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
+ 
 }
 
 .tech-chips span {
@@ -82,16 +84,16 @@
 }
 
 .projects-header .greeting {
-  font-size: clamp(1rem, 5vw, 3rem);
+  font-size: clamp(1rem, 5vw, 4rem);
   font-family: 'Courier New', monospace;
   font-style: bold;
   color: white;
-  margin-bottom: 50px;
-  margin-top: 5px;
+  margin-bottom: 30px;
+  margin-top: 0px;
 }
 
 .projects-header .typed-subline {
-  font-size: clamp(1rem, 4.5vw, 2rem);
+  font-size: clamp(1rem, 4.5vw, 2.5rem);
   font-weight: bold;
   color: black;
   font-family: 'Courier New', monospace;
