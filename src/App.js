@@ -7,12 +7,14 @@ import Projects from './pages/Projects';
 import ContactMe from './pages/ContactMe';
 import Resume from './pages/Resume';
 import Footer from './components/Footer'; 
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
+         <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

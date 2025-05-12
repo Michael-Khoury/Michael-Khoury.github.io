@@ -1,13 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../assets/mk-logo.png'; // ✅ your logo
+import logo from '../assets/mk-logo.png';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-   const navRef = useRef();
+  const navRef = useRef();
+  const location = useLocation();
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
@@ -18,20 +20,29 @@ function Navbar() {
     return () => window.removeEventListener('click', handleClickOutside);
   }, []);
 
+  // Scroll to top if already on the target path 
+  const handleLinkClick = (e, path) => {
+    setIsOpen(false);
+    if (location.pathname === path) {
+      e.preventDefault(); // prevent re-navigation
+      window.scrollTo({ top: 0, behavior: 'smooth' }); 
+    }
+    // else: allow <Link> to handle navigation normally
+  };
+
   return (
     <nav className="navbar" ref={navRef}>
-  <div className="navbar-left">
-    <Link to="/" className="logo-only-link" onClick={() => setIsOpen(false)}>
-      <img src={logo} alt="MK Logo" className="logo-img" />
-    </Link>
-    <Link to="/" className="logo-text-link" onClick={() => setIsOpen(false)}>
-      <div className="logo-text">
-        Michael Khoury<br />
-        <span className="subtitle">Senior Computer Engineering Student</span>
+      <div className="navbar-left">
+        <Link to="/" className="logo-only-link" onClick={(e) => handleLinkClick(e, '/')}>
+          <img src={logo} alt="MK Logo" className="logo-img" />
+        </Link>
+        <Link to="/" className="logo-text-link" onClick={(e) => handleLinkClick(e, '/')}>
+          <div className="logo-text">
+            Michael Khoury<br />
+            <span className="subtitle">Senior Computer Engineering Student</span>
+          </div>
+        </Link>
       </div>
-    </Link>
-  </div>
-
 
       <div className={`hamburger ${isOpen ? "active" : ""}`} onClick={toggleMenu}>
         <span></span>
@@ -40,12 +51,12 @@ function Navbar() {
       </div>
 
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
-        <Link to="/" onClick={toggleMenu}>Home</Link>
-        <Link to="/about" onClick={toggleMenu}>About Me</Link>
-        <Link to="/work" onClick={toggleMenu}>Work Experience</Link>
-        <Link to="/projects" onClick={toggleMenu}>Projects</Link>
-        <Link to="/contact" onClick={toggleMenu}>Contact Me</Link>
-        <Link to="/resume" onClick={toggleMenu}>Resume</Link>
+        <Link to="/" onClick={(e) => handleLinkClick(e, '/')}>Home</Link>
+        <Link to="/about" onClick={(e) => handleLinkClick(e, '/about')}>About Me</Link>
+        <Link to="/work" onClick={(e) => handleLinkClick(e, '/work')}>Work Experience</Link>
+        <Link to="/projects" onClick={(e) => handleLinkClick(e, '/projects')}>Projects</Link>
+        <Link to="/contact" onClick={(e) => handleLinkClick(e, '/contact')}>Contact Me</Link>
+        <Link to="/resume" onClick={(e) => handleLinkClick(e, '/resume')}>Resume</Link>
       </div>
     </nav>
   );

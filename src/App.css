@@ -473,3 +473,14 @@ nav a:hover {
     transform: translateX(0);
   }
 }
+
+.nav-links div {
+  margin: 5px 0;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer; 
+}
+
+.nav-links div:hover {
+  text-decoration: underline;
+}
