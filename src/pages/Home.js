@@ -46,6 +46,12 @@ import vscodeIcon from '../assets/icons/vscode.jpeg';
 import dvcIcon from '../assets/icons/dvc.jpeg';
 import simulinkIcon from '../assets/icons/simulink.jpeg';
 import quarcIcon from '../assets/icons/quarc.jpeg';
+import nodeIcon from '../assets/icons/node.png';
+import mongoIcon from '../assets/icons/mongo.png';
+import expressIcon from '../assets/icons/express.png';
+import restIcon from '../assets/icons/rest.png';
+import githubpagesIcon from '../assets/icons/githubpages.png';
+import reactrouterIcon from '../assets/icons/reactrouter.png'; 
 import { useLocation } from 'react-router-dom';
 
 ;
@@ -210,7 +216,7 @@ useEffect(() => {
         className={activeTab === 'frameworks' ? 'active' : ''}
         onClick={() => setActiveTab('frameworks')}
       >
-        Libraries/Frameworks
+        Frameworks
       </button>
       <button
         className={activeTab === 'software' ? 'active' : ''}
@@ -247,6 +253,12 @@ useEffect(() => {
       {activeTab === 'frameworks' && (
         <ul>
           <li className="tech-item"><img src={reactIcon} alt="Python" className="tech-icon" />React.js</li>
+          <li className="tech-item"><img src={nodeIcon} alt="Python" className="tech-icon" />Node.js</li>
+          <li className="tech-item"><img src={mongoIcon} alt="Python" className="tech-icon" />MongoDB / Mongoose</li>
+          <li className="tech-item"><img src={expressIcon} alt="Python" className="tech-icon" />Express.js</li>
+          <li className="tech-item"><img src={restIcon} alt="Python" className="tech-icon" />REST APIs</li>
+
+          
           <li className="tech-item"><img src={pytorchIcon} alt="Python" className="tech-icon" />Pytorch</li>
 
           <li className="tech-item"><img src={matplotlibIcon} alt="Python" className="tech-icon" />Matplotlib</li>
@@ -268,6 +280,8 @@ useEffect(() => {
       {activeTab === 'software' && (
         <ul>
           <li className="tech-item"><img src={gitIcon} alt="Python" className="tech-icon" />Git/GitHub</li>
+          <li className="tech-item"><img src={githubpagesIcon} alt="Python" className="tech-icon" />GitHub Pages</li>
+          <li className="tech-item"><img src={reactrouterIcon} alt="Python" className="tech-icon" />React Router</li>
           <li className="tech-item"><img src={dvcIcon} alt="Python" className="tech-icon" />Data Version Control</li>
           <li className="tech-item"><img src={vscodeIcon} alt="Python" className="tech-icon" />Visual Studio Code</li>
           <li className="tech-item"><img src={zapierIcon} alt="Python" className="tech-icon" />Zapier</li>

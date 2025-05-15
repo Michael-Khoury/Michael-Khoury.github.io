@@ -395,7 +395,7 @@ nav a:hover {
 }
 
 /* Responsive: Small screens */
-@media (max-width: 400px) { /* was 768px*/
+@media (max-width: 768px) { /* was 400px*/
   .greeting {
     font-size: 1.5rem; /* was 2 */
   }
@@ -422,6 +422,11 @@ nav a:hover {
 
   .tab-content ul {
     grid-template-columns: 1fr;
+    justify-items: center;
+      padding-left: 0;        /* ✅ Prevent left offset */
+  margin: 0 auto;         /* ✅ Center the grid */
+  width: 100%; 
+
   }
 
   .quick-links {
@@ -435,9 +440,31 @@ nav a:hover {
   }
 
   .tech-stack-box {
-    padding: 20px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;           /* ✅ Make it responsive */
+  max-width: 95vw;       /* ✅ Prevent horizontal scroll */
+  box-sizing: border-box;
   }
+  .tab-content li {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
+.tech-item {
+  justify-content: center; 
+  width: 100%;/* ✅ centers icon + text horizontally */
+}
+
+.tech-icon {
+  flex-shrink: 0; /* ✅ Prevent icon from collapsing weirdly */
+}
+
+}
+
+
 
 .tech-item {
   opacity: 0;
@@ -462,6 +489,10 @@ nav a:hover {
 .tech-item:nth-child(14) { animation-delay: 0.7s; }
 .tech-item:nth-child(15) { animation-delay: 0.75s; }
 .tech-item:nth-child(16) { animation-delay: 0.8s; }
+.tech-item:nth-child(17) { animation-delay: 0.85s; }
+.tech-item:nth-child(18) { animation-delay: 0.9s; }
+.tech-item:nth-child(19) { animation-delay: 0.95s; }
+.tech-item:nth-child(20) { animation-delay: 1s; }
 
 
 
