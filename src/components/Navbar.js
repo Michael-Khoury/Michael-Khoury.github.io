@@ -7,8 +7,10 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef();
   const location = useLocation();
-  const toggleMenu = () => setIsOpen(!isOpen);
   const navigate = useNavigate();
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -21,12 +23,14 @@ function Navbar() {
     return () => window.removeEventListener('click', handleClickOutside);
   }, []);
 
-  // Scroll to top if already on the target path 
+  // Scroll to top if already on the target path
   const handleLinkClick = (e, path) => {
     setIsOpen(false);
-    if (location.pathname === path) {
+    const currentPath = location.hash;
+
+    if ((path === '/' && currentPath === '#/') || currentPath === `#${path}`) {
       e.preventDefault(); // prevent re-navigation
-      window.scrollTo({ top: 0, behavior: 'smooth' }); 
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     // else: allow <Link> to handle navigation normally
   };
@@ -53,12 +57,13 @@ function Navbar() {
 
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <Link to="/" onClick={(e) => handleLinkClick(e, '/')}>Home</Link>
-        <a
-          href="/#about"
+
+        <Link
+          to="/"
           onClick={(e) => {
             e.preventDefault();
             setIsOpen(false);
-            if (location.pathname !== '/') {
+            if (location.hash !== '#/') {
               navigate('/', { state: { scrollTo: 'about' } });
             } else {
               const aboutSection = document.getElementById('about');
@@ -69,13 +74,12 @@ function Navbar() {
           }}
         >
           About Me
-        </a>
+        </Link>
+
         <Link to="/projects" onClick={(e) => handleLinkClick(e, '/projects')}>Projects</Link>
         <Link to="/work" onClick={(e) => handleLinkClick(e, '/work')}>Work Experience</Link>
-        
-                <Link to="/resume" onClick={(e) => handleLinkClick(e, '/resume')}>Resume</Link>
+        <Link to="/resume" onClick={(e) => handleLinkClick(e, '/resume')}>Resume</Link>
         <Link to="/contact" onClick={(e) => handleLinkClick(e, '/contact')}>Contact Me</Link>
-
       </div>
     </nav>
   );
