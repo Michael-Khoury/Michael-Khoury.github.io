@@ -3,14 +3,14 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { hash } = useLocation();
 
   useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // optional: makes scroll smooth
+      behavior: 'smooth' // optional
     });
-  }, [pathname]);
+  }, [hash]);
 
   return null;
 }

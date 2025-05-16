@@ -24,16 +24,22 @@ function Navbar() {
   }, []);
 
   // Scroll to top if already on the target path
-  const handleLinkClick = (e, path) => {
-    setIsOpen(false);
-    const currentPath = location.hash;
+const handleLinkClick = (e, path) => {
+  setIsOpen(false);
 
-    if ((path === '/' && currentPath === '#/') || currentPath === `#${path}`) {
-      e.preventDefault(); // prevent re-navigation
+  // Normalize target and current hash
+  const targetHash = path === '/' ? '#/' : `#${path}`;
+  const currentHash = window.location.hash;
+
+  if (currentHash === targetHash) {
+    e.preventDefault(); // prevent re-routing
+    // Wait a tick before scrolling (helps in some cases)
+    setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    // else: allow <Link> to handle navigation normally
-  };
+    }, 0);
+  }
+};
+
 
   return (
     <nav className="navbar" ref={navRef}>
