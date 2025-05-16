@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f3487807.css",
-    "main.js": "/static/js/main.8f8618b9.js",
+    "main.js": "/static/js/main.596a4656.js",
     "static/media/Background.png": "/static/media/Background.273cb0b20d97e65dd7c5.png",
     "static/media/tower-defense.png": "/static/media/tower-defense.2ad65b9b6bdf512ddf47.png",
     "static/media/SI-work-photo.jpg": "/static/media/SI-work-photo.e5727972bcc2edeaf708.jpg",
@@ -12,10 +12,10 @@
     "static/media/github.png": "/static/media/github.c53739c8dc1501f16b88.png",
     "index.html": "/index.html",
     "main.f3487807.css.map": "/static/css/main.f3487807.css.map",
-    "main.8f8618b9.js.map": "/static/js/main.8f8618b9.js.map"
+    "main.596a4656.js.map": "/static/js/main.596a4656.js.map"
   },
   "entrypoints": [
     "static/css/main.f3487807.css",
-    "static/js/main.8f8618b9.js"
+    "static/js/main.596a4656.js"
   ]
 }
