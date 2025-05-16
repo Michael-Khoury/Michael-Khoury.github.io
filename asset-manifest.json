@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.685ab64f.css",
-    "main.js": "/static/js/main.ecec2815.js",
+    "main.css": "/static/css/main.44865fb0.css",
+    "main.js": "/static/js/main.e7075c37.js",
     "static/media/Background.png": "/static/media/Background.273cb0b20d97e65dd7c5.png",
     "static/media/tower-defense.png": "/static/media/tower-defense.2ad65b9b6bdf512ddf47.png",
     "static/media/SI-work-photo.jpg": "/static/media/SI-work-photo.e5727972bcc2edeaf708.jpg",
@@ -11,11 +11,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.09c3c93af412748ac109.png",
     "static/media/github.png": "/static/media/github.c53739c8dc1501f16b88.png",
     "index.html": "/index.html",
-    "main.685ab64f.css.map": "/static/css/main.685ab64f.css.map",
-    "main.ecec2815.js.map": "/static/js/main.ecec2815.js.map"
+    "main.44865fb0.css.map": "/static/css/main.44865fb0.css.map",
+    "main.e7075c37.js.map": "/static/js/main.e7075c37.js.map"
   },
   "entrypoints": [
-    "static/css/main.685ab64f.css",
-    "static/js/main.ecec2815.js"
+    "static/css/main.44865fb0.css",
+    "static/js/main.e7075c37.js"
   ]
 }
