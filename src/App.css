@@ -421,11 +421,12 @@ nav a:hover {
   }
 
   .tab-content ul {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
       padding-left: 0;        /* ✅ Prevent left offset */
   margin: 0 auto;         /* ✅ Center the grid */
   width: 100%; 
+  
 
   }
 
