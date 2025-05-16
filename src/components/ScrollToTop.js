@@ -3,14 +3,12 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 function ScrollToTop() {
-  const { hash } = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // optional
-    });
-  }, [hash]);
+    // Scroll to top on any route change
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.key]); // location.key updates on *every* navigation
 
   return null;
 }
