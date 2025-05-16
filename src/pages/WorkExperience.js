@@ -30,8 +30,10 @@ function WorkExperience() {
           <div className="tech-chips">
             <span>Python</span>
             <span>PyTorch</span>
+            <span>YOLOv8</span>
             <span>Software Defined Radio</span>
-            <span>VHDL</span>
+            <span>Machine Learning</span>
+            <span>Google Colab</span>
             <span>Signal Processing</span>
             <span>System-level design</span>
             <span>Computer-aided design</span>

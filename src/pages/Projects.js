@@ -50,6 +50,10 @@ function Projects() {
           <span>React.js</span>
           <span>JavaScript</span>
           <span>HTML</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>REST API</span>
+          <span>MongoDB</span>
           <span> JSX</span>
           <span> XML</span>
           <span>CSS</span>
