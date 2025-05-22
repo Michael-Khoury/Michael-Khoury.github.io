@@ -18,6 +18,10 @@ body {
   background-attachment: fixed;
 }
 
+html {
+  scroll-padding-top: 25px; /* adjust to fit your nav height */
+}
+
 
 nav {
   margin: 0;
@@ -433,6 +437,10 @@ nav a.active-link {
   background-repeat: repeat-y;
   background-position: top center;
   background-attachment: scroll;
+}
+
+html {
+  scroll-padding-top: 45px; /* adjust to fit your nav height */
 }
 
 .profile-links-row {
