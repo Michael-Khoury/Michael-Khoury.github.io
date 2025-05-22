@@ -9,6 +9,16 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Different background for Contact and Resume pages */
+.App.alt-background {
+  background-image: url('./assets/Background.png'); /* <- use your custom image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
 nav {
   margin: 0;
   padding: 10px 20px;

@@ -66,6 +66,7 @@
 @media (max-width: 768px) {
   .project-block {
     padding: 30px 20px;
+    width: 85%;
   }
 
   .project-block h2 {
