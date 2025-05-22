@@ -424,13 +424,19 @@ nav a:hover {
   background-attachment: scroll;
 }
 
+.profile-links-row {
+
+  margin-top: 25px;
+
+  gap: 5vw;}
   
   .greeting {
-    font-size: 1.5rem; /* was 2 */
+    margin-top: 40px;
+    font-size: 1.75rem; /* was 2 */
   }
 
   .typed-subline {
-    font-size: 1.2rem; /* was 1.3*/
+    font-size: 1.5rem; /* was 1.3*/
   }
 
   .about-section {

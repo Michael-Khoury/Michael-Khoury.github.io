@@ -163,13 +163,13 @@
 
 @media (max-width: 768px) {
   .greeting1 {
-    font-size: 1.5rem;
-    margin-top: -50px;
+    font-size: 2rem;
+    margin-top: 12px;
     margin-bottom: 20px;
   }
 
   .typed-subline1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 10px;
   }
 
