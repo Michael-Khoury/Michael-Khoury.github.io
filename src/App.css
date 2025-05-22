@@ -399,11 +399,11 @@ nav a:hover {
   
   body {
     background-image: url('./assets/Background-mobile-two.png');
-    background-size: contain;                 /* 🔁 No zooming or stretching */
-    background-repeat: repeat-y;             /* 🔁 Repeats downward */
+    background-attachment: scroll; /* Force reset */
+    background-repeat: repeat-y;
     background-position: top center;
-    background-attachment: scroll;           /* Prevents parallax glitching */
-    background-color: black;                 /* Fills behind any gaps */
+    background-size: contain; /* or contain if image is too zoomed other option is "100% auto" */
+    background-color: black;           /* Fills behind any gaps */
   }
 
   
