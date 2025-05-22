@@ -395,20 +395,12 @@ nav a:hover {
 }
 
 /* Responsive: Small screens */
-@media (max-width: 768px) { /* was 400px*/
+@media (max-width: 1200px) { /* was 400px*/
   
-  body {
-    background-image: url('./assets/Background-mobile.png');
-    background-attachment: scroll;
-    background-repeat: repeat-y;        /* repeat vertically */
-    background-position: top center;
-    background-size: 100% auto;         /* ✅ match width, let height grow */
-    background-color: black;            /* fill any gaps below */
-  }
 
 
 
-
+  
   .greeting {
     font-size: 1.5rem; /* was 2 */
   }
