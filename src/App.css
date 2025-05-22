@@ -395,9 +395,16 @@ nav a:hover {
 }
 
 /* Responsive: Small screens */
-@media (max-width: 1200px) { /* was 400px*/
+@media (max-width: 600px) { /* was 400px*/
   
-
+  body {
+    background-image: url('./assets/Background-mobile-two.png');
+    background-size: contain;                 /* 🔁 No zooming or stretching */
+    background-repeat: repeat-y;             /* 🔁 Repeats downward */
+    background-position: top center;
+    background-attachment: scroll;           /* Prevents parallax glitching */
+    background-color: black;                 /* Fills behind any gaps */
+  }
 
   
   .greeting {
