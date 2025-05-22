@@ -5,9 +5,11 @@ import logo from '../assets/mk-logo.png';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeScrollSection, setActiveScrollSection] = useState('home');
   const navRef = useRef();
   const location = useLocation();
   const navigate = useNavigate();
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -23,23 +25,43 @@ function Navbar() {
     return () => window.removeEventListener('click', handleClickOutside);
   }, []);
 
-  // Scroll to top if already on the target path
-const handleLinkClick = (e, path) => {
-  setIsOpen(false);
+  // Track scroll position to toggle between Home and About Me
+  useEffect(() => {
+    const aboutSection = document.getElementById('about');
 
-  // Normalize target and current hash
-  const targetHash = path === '/' ? '#/' : `#${path}`;
-  const currentHash = window.location.hash;
+    if (!aboutSection) return;
 
-  if (currentHash === targetHash) {
-    e.preventDefault(); // prevent re-routing
-    // Wait a tick before scrolling (helps in some cases)
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 0);
-  }
-};
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setActiveScrollSection('about');
+        } else {
+          setActiveScrollSection('home');
+        }
+      },
+      {
+        threshold: 0.6, // At least 60% visible
+      }
+    );
 
+    observer.observe(aboutSection);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const handleLinkClick = (e, path) => {
+    setIsOpen(false);
+    const targetHash = path === '/' ? '#/' : `#${path}`;
+    const currentHash = window.location.hash;
+    if (currentHash === targetHash) {
+      e.preventDefault();
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 0);
+    }
+  };
 
   return (
     <nav className="navbar" ref={navRef}>
@@ -62,10 +84,17 @@ const handleLinkClick = (e, path) => {
       </div>
 
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
-        <Link to="/" onClick={(e) => handleLinkClick(e, '/')}>Home</Link>
+        <Link
+          to="/"
+          className={location.pathname === '/' && activeScrollSection === 'home' ? 'active-link' : ''}
+          onClick={(e) => handleLinkClick(e, '/')}
+        >
+          Home
+        </Link>
 
         <Link
           to="/"
+          className={location.pathname === '/' && activeScrollSection === 'about' ? 'active-link' : ''}
           onClick={(e) => {
             e.preventDefault();
             setIsOpen(false);
@@ -82,10 +111,37 @@ const handleLinkClick = (e, path) => {
           About Me
         </Link>
 
-        <Link to="/projects" onClick={(e) => handleLinkClick(e, '/projects')}>Projects</Link>
-        <Link to="/work" onClick={(e) => handleLinkClick(e, '/work')}>Work Experience</Link>
-        <Link to="/resume" onClick={(e) => handleLinkClick(e, '/resume')}>Resume</Link>
-        <Link to="/contact" onClick={(e) => handleLinkClick(e, '/contact')}>Contact Me</Link>
+        <Link
+          to="/projects"
+          className={location.pathname === '/projects' ? 'active-link' : ''}
+          onClick={(e) => handleLinkClick(e, '/projects')}
+        >
+          Projects
+        </Link>
+
+        <Link
+          to="/work"
+          className={location.pathname === '/work' ? 'active-link' : ''}
+          onClick={(e) => handleLinkClick(e, '/work')}
+        >
+          Work Experience
+        </Link>
+
+        <Link
+          to="/resume"
+          className={location.pathname === '/resume' ? 'active-link' : ''}
+          onClick={(e) => handleLinkClick(e, '/resume')}
+        >
+          Resume
+        </Link>
+
+        <Link
+          to="/contact"
+          className={location.pathname === '/contact' ? 'active-link' : ''}
+          onClick={(e) => handleLinkClick(e, '/contact')}
+        >
+          Contact Me
+        </Link>
       </div>
     </nav>
   );
