@@ -397,16 +397,7 @@ nav a:hover {
 /* Responsive: Small screens */
 @media (max-width: 1200px) { /* was 400px*/
   
-  body {
-    background-image: url('./assets/Background-mobile.png');
-    background-size: auto 100%;     /* ✅ Fit height, not width */
-    background-repeat: repeat-x;    /* ✅ Repeat horizontally if needed */
-    background-position: top center;
-    background-attachment: scroll;
-    background-color: black;   
-  
-  }            
-  
+
 
   
   .greeting {
