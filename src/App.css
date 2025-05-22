@@ -416,6 +416,14 @@ nav a:hover {
     background-color: black;           /* Fills behind any gaps */
   }
 
+  .App.alt-background {
+  background-image: url('./assets/Background-mobile-two.png'); /* <- use your custom image path */
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-attachment: scroll;
+}
+
   
   .greeting {
     font-size: 1.5rem; /* was 2 */
