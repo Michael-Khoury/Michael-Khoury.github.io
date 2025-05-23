@@ -171,8 +171,23 @@ useEffect(() => {
               <a href="/michaelkhouryresume.pdf" download>
                 <span className="icon">📄</span> Download my resume
               </a>
-              <a href="https://mail.google.com/mail/?view=cm&to=mkhoury@mun.ca" target="_blank" rel="noopener noreferrer">
-                <img src={gmailIcon} alt="Gmail" className="icon-img" /> Email me
+                          <a
+                href="https://mail.google.com/mail/?view=cm&to=mkhoury@mun.ca"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    'https://mail.google.com/mail/?view=cm&to=mkhoury@mun.ca',
+                    'gmailWindow',
+                    'width=600,height=600,scrollbars=yes,resizable=yes'
+                  );
+                }}
+              >
+                <img
+                  src={gmailIcon}
+                  alt="Gmail"
+                  className="icon-img"
+                />
+                Email me
               </a>
               <Link to="/projects">
                 <span className="icon">💻</span> Explore my projects
