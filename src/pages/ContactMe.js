@@ -49,10 +49,24 @@ function ContactMe() {
   <a href="https://github.com/Michael-Khoury" target="_blank" rel="noopener noreferrer">
     <img src={require('../assets/icons/github.png')} alt="GitHub" className="contact-icon" />
   </a>
-  <a href="mailto:mkhoury@mun.ca">
-    <img src={require('../assets/icons/gmail.png')} alt="Gmail" className="contact-icon" />
-  </a>
-  <a href="www.linkedin.com/in/-khoury" target="_blank" rel="noopener noreferrer">
+<a
+  href="https://mail.google.com/mail/?view=cm&to=mkhoury@mun.ca"
+  onClick={(e) => {
+    e.preventDefault();
+    window.open(
+      'https://mail.google.com/mail/?view=cm&to=mkhoury@mun.ca',
+      'gmailWindow',
+      'width=600,height=600,scrollbars=yes,resizable=yes'
+    );
+  }}
+>
+  <img
+    src={require('../assets/icons/gmail.png')}
+    alt="Gmail"
+    className="contact-icon"
+  />
+</a>
+  <a href="https://www.linkedin.com/in/-khoury/" target="_blank" rel="noopener noreferrer">
     <img src={require('../assets/icons/linkedin.png')} alt="LinkedIn" className="contact-icon" />
   </a>
 </div>
