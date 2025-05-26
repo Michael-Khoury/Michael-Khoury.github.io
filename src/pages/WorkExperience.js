@@ -22,16 +22,32 @@ function WorkExperience() {
           <h2>C-CORE – Computer Engineering Intern</h2>
           <p className="date-range"><em>May 2025 – Present</em></p>
 
-         <p>
-  Currently working on AI/ML research and development projects at C-CORE, where I contribute to the design of advanced algorithms using Python and PyTorch. My work involves integrating software-defined radio systems, writing VHDL modules for hardware compatibility, and applying signal processing techniques to real-world engineering data. I also support system-level design and CAD-based workflows, gaining cross-functional experience across both hardware and software pipelines.
-</p>
+            <p>
+          Currently working at C-CORE on advanced R&D projects involving machine learning, signal processing, and real-time system development. My contributions include designing and training machine learning models using Python and PyTorch, developing and optimizing signal processing algorithms using Python, C++, and VHDL for target detection in radar data, and building SDR-based workflows with tools like Gnuradio. I also work on hardware-software integration, including C++, VHDL module development, and system-level optimization to improve performance metrics such as range and signal-to-noise ratio. This role spans across embedded systems, algorithm design, and applied AI, giving me hands-on experience with both low-level and high-level engineering workflows.
+        </p>
+
 
           <p className="tech-heading">Technologies used:</p>
           <div className="tech-chips">
             <span>Python</span>
             <span>PyTorch</span>
             <span>YOLOv8</span>
+            <span>OpenCV</span>
+            <span>NumPy</span>
+            <span>pandas</span>
+            <span>C++</span>
+            <span>Bash / Shell</span>
+            <span>VHDL</span>
+            <span>Gnuradio</span>
+            <span>Matplotlib</span>
+            <span>Embedded Systems</span>
+            <span>Hardware-software integration</span>
+            <span>Real-time systems</span>
+            <span>Algorithm design</span>
+            <span>Image Processing</span>
             <span>Software Defined Radio</span>
+            <span>Data pipeline scripting (Python, os, shutil)</span>\
+            <span>Data Analysis</span>
             <span>Machine Learning</span>
             <span>Google Colab</span>
             <span>Signal Processing</span>

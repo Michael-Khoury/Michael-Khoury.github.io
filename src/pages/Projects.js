@@ -14,8 +14,52 @@ function Projects() {
   </p>
 </div>
 
-
       <div className="project-block color1 ">
+        <h2>PORTFOLIO WEBSITE</h2>
+        <p>
+          This very website! Built from scratch as a full-stack application using React.js (with JSX) for the frontend and Node.js/Express.js for the backend. 
+          The frontend includes scroll-aware routing, animated text, fade-in-on-scroll effects, mobile-optimized background behavior, and modular components such as a responsive Navbar, Footer, and ScrollToTop.
+          The Contact Me form is powered by a live RESTful backend API hosted on Render, which handles POST requests using Nodemailer for secure email delivery. 
+          The backend also supports optional MongoDB integration using Mongoose for scalable message persistence. 
+          The entire frontend is styled with custom CSS, fully responsive across devices, and deployed via GitHub Pages.
+        </p>
+
+        <p className="tech-heading">Skills or Technologies I used:</p>
+        <div className="tech-chips">
+          <span>React.js</span>
+          <span>Node.js</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Express.js</span>
+          <span>REST API</span>
+          <span>MongoDB / Mongoose</span>
+          <span> JSX</span>
+          <span> XML</span>
+          <span>DOM Manipulation</span>
+          <span>React Router</span>
+          <span>React Hooks</span>
+          <span>Nodemailer</span>
+          <span>CORS</span>
+          <span>Render</span>
+          <span>dotenv</span>
+          <span>Github Pages</span>
+          <span>Media Queries</span>
+        </div>
+        <a
+  href="https://github.com/Michael-Khoury/my-portfolio"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="github-button"
+>
+  
+ 🔗 Check out the GitHub repository! 
+</a>
+
+      </div>
+
+
+      <div className="project-block color3 ">
         <h2>UNITY TOWER DEFENSE GAME</h2>
         <p>
           Developed a polished 2D tower defense game in Unity with two teammates as part of a software design course during my fifth of eight academic semesters in my computer engineering degree.
@@ -40,38 +84,7 @@ function Projects() {
       </div>
       
 
-      <div className="project-block color2 ">
-        <h2>PORTFOLIO WEBSITE</h2>
-        <p>
-          This very website! Built from scratch with animations, typewriter effects, responsive sections, and a clean scroll-linked navigation bar using React.
-        </p>
-        <p className="tech-heading">Skills or Technologies I used:</p>
-        <div className="tech-chips">
-          <span>React.js</span>
-          <span>JavaScript</span>
-          <span>HTML</span>
-          <span>Node.js</span>
-          <span>Express.js</span>
-          <span>REST API</span>
-          <span>MongoDB</span>
-          <span> JSX</span>
-          <span> XML</span>
-          <span>CSS</span>
-          <span>React Router</span>
-        </div>
-        <a
-  href="https://github.com/Michael-Khoury/my-portfolio"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="github-button"
->
-  
- 🔗 Check out the GitHub repository! 
-</a>
-
-      </div>
-
-      <div className="project-block color3">
+      <div className="project-block color2">
         <h2>PYTHON ATTENDANCE TRACKER</h2>
         <p>
           Self-initiated during a work term to streamline attendance tracking for myself, my supervisor, and future SI Leaders.
