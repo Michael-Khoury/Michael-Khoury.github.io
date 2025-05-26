@@ -46,7 +46,7 @@ function WorkExperience() {
             <span>Algorithm design</span>
             <span>Image Processing</span>
             <span>Software Defined Radio</span>
-            <span>Data pipeline scripting (Python, os, shutil)</span>\
+            <span>Data pipeline scripting</span>\
             <span>Data Analysis</span>
             <span>Machine Learning</span>
             <span>Google Colab</span>
