@@ -96,6 +96,9 @@
   .experience-right {
     width: 100%;
     text-align: center;
+      display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ This is needed */
     
   }
 
@@ -114,4 +117,12 @@
   color: #444;
   margin-top: -15px;
   margin-bottom: 20px;
+}
+
+.experience-logo {
+    display: block;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
