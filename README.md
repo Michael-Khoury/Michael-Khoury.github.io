@@ -1,6 +1,6 @@
 # 🌐 Michael Khoury – Portfolio Frontend
 
-This is the frontend for my **full-stack personal portfolio website**, developed using **React.js (with JSX)** and **React Router** for multi-page navigation and scroll-aware routing. The site is fully responsive and styled entirely using custom CSS, including media queries for mobile optimization — no UI frameworks used.
+This is the frontend for my **full-stack personal portfolio website**, developed using **React.js (with JSX)** and **React Router** for multi-page navigation and scroll-aware routing. The site is fully responsive and styled entirely using custom CSS, including media queries for mobile optimization.
 
 It features a clean, component-driven UI with animated typing effects, smooth scroll behavior, and dynamic background handling (including mobile-optimized flipping and repeating logic). The app includes modular, reusable components such as the `Navbar`, `Footer`, and `ScrollToTop`.
 
@@ -13,7 +13,7 @@ This frontend communicates with a custom-built backend (detailed below) to handl
 - 🔁 **Multi-page routing** with `react-router-dom`
 - 🎯 **Scroll-aware navigation** (e.g., Home vs. About section)
 - 💡 **Scroll-triggered fade-in animations**
-- 📱 **Mobile-first design** with responsive CSS (no Tailwind/Bootstrap)
+- 📱 **Mobile-first design** with responsive CSS 
 - 🔄 **Animated text** using timed typewriter effect
 - 📨 **Contact form integration** with live backend
 - 📄 **Embedded PDF resume viewer**
@@ -34,28 +34,20 @@ This frontend communicates with a custom-built backend (detailed below) to handl
 
 ---
 
-## 📂 Pages & Components
+## 🌐 Backend API (Contact Form)
 
-### Pages
+This frontend is connected to a custom-built **REST API** using:
 
-| Page             | Description                                                                 |
-|------------------|-----------------------------------------------------------------------------|
-| `/` (Home)        | Animated intro, profile section, quick links                               |
-| `/projects`       | Detailed project blocks with screenshots and GitHub links                  |
-| `/work`           | Internships and co-op experiences with logos and tech tags                 |
-| `/resume`         | Embedded PDF viewer of resume                                              |
-| `/contact`        | Contact form + styled social boxes (GitHub, Gmail, LinkedIn)               |
+- **Node.js**
+- **Express.js**
+- **Nodemailer**
+- **Render** (for deployment)
 
-### Components
+The backend handles `POST` requests from the contact form and sends email notifications securely. It also includes optional **MongoDB** storage via **Mongoose** (commented out for flexibility).
 
-- `Navbar.js`: Responsive navigation with scroll-tracking and hamburger menu
-- `Footer.js`: Sticky footer with external links
-- `ScrollToTop.js`: Auto scrolls to top on route change
-- `App.css`: Custom CSS styling for all components, fully responsive
+🔗 [Backend GitHub Repository](https://github.com/your-username/backend-repo) <!-- Replace with actual link -->
 
----
 
-📍 **Live Site**:  
-[https://michael-khoury.github.io](https://michael-khoury.github.io)
+
 
 
