@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# 🌐 Michael Khoury – Portfolio Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend for my **full-stack personal portfolio website**, developed using **React.js (with JSX)** and **React Router** for multi-page navigation and scroll-aware routing. The site is fully responsive and styled entirely using custom CSS, including media queries for mobile optimization.
 
-## Available Scripts
+It features a clean, component-driven UI with animated typing effects, smooth scroll behavior, and dynamic background handling (including mobile-optimized flipping and repeating logic). The app includes modular, reusable components such as the `Navbar`, `Footer`, and `ScrollToTop`.
 
-In the project directory, you can run:
+This frontend communicates with a custom-built backend (detailed below) to handle contact form submissions.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔁 **Multi-page routing** with `react-router-dom`
+- 🎯 **Scroll-aware navigation** (e.g., Home vs. About section)
+- 💡 **Scroll-triggered fade-in animations**
+- 📱 **Mobile-first design** with responsive CSS 
+- 🔄 **Animated text** using timed typewriter effect
+- 📨 **Contact form integration** with live backend
+- 📄 **Embedded PDF resume viewer**
+- 🎨 **Custom layout and color-coded tech stacks**
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Technologies Used
 
-### `npm run build`
+- **React.js**
+- **JavaScript (ES6+)**
+- **JSX**
+- **React Router**
+- **React Hooks**
+- **Media Queries**
+- **DOM Manipulation**
+- **HTML5**
+- **CSS3**
+- **GitHub Pages** (for deployment)
+- **RESTful API** (with backend integration)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🌐 Backend API (Contact Form)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This frontend is connected to a custom-built **REST API** using:
 
-### `npm run eject`
+- **Node.js**
+- **Express.js**
+- **Nodemailer**
+- **CORS**
+- **dotenv**
+- **REST APIs**
+- **Render** (for deployment)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The backend handles `POST` requests from the contact form and sends email notifications securely. It also includes optional **MongoDB** storage via **Mongoose** (commented out for flexibility).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🔗 [Backend GitHub Repository](https://github.com/Michael-Khoury/contact-api) 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
