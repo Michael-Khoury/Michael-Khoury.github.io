@@ -27,6 +27,9 @@ This frontend communicates with a custom-built backend (detailed below) to handl
 - **JavaScript (ES6+)**
 - **JSX**
 - **React Router**
+- **React Hooks**
+- **Media Queries**
+- **DOM Manipulation**
 - **HTML5**
 - **CSS3**
 - **GitHub Pages** (for deployment)
@@ -41,6 +44,9 @@ This frontend is connected to a custom-built **REST API** using:
 - **Node.js**
 - **Express.js**
 - **Nodemailer**
+- **CORS**
+- **dotenv**
+- **REST APIs**
 - **Render** (for deployment)
 
 The backend handles `POST` requests from the contact form and sends email notifications securely. It also includes optional **MongoDB** storage via **Mongoose** (commented out for flexibility).
