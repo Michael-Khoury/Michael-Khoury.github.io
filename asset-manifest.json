@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.863d2bf6.css",
-    "main.js": "/static/js/main.0e1c037f.js",
+    "main.css": "/static/css/main.9d9187f7.css",
+    "main.js": "/static/js/main.ba458254.js",
     "static/media/Background-mobile-two.png": "/static/media/Background-mobile-two.0829a41e3fdb7a89c2a5.png",
     "static/media/Background.png": "/static/media/Background.273cb0b20d97e65dd7c5.png",
     "static/media/tower-defense.png": "/static/media/tower-defense.2ad65b9b6bdf512ddf47.png",
@@ -12,11 +12,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.09c3c93af412748ac109.png",
     "static/media/github.png": "/static/media/github.c53739c8dc1501f16b88.png",
     "index.html": "/index.html",
-    "main.863d2bf6.css.map": "/static/css/main.863d2bf6.css.map",
-    "main.0e1c037f.js.map": "/static/js/main.0e1c037f.js.map"
+    "main.9d9187f7.css.map": "/static/css/main.9d9187f7.css.map",
+    "main.ba458254.js.map": "/static/js/main.ba458254.js.map"
   },
   "entrypoints": [
-    "static/css/main.863d2bf6.css",
-    "static/js/main.0e1c037f.js"
+    "static/css/main.9d9187f7.css",
+    "static/js/main.ba458254.js"
   ]
 }
