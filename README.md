@@ -51,7 +51,7 @@ This frontend is connected to a custom-built **REST API** using:
 
 The backend handles `POST` requests from the contact form and sends email notifications securely. It also includes optional **MongoDB** storage via **Mongoose** (commented out for flexibility).
 
-🔗 [Backend GitHub Repository](https://github.com/your-username/backend-repo) <!-- Replace with actual link -->
+🔗 [Backend GitHub Repository](https://github.com/Michael-Khoury/contact-api) 
 
 
 
