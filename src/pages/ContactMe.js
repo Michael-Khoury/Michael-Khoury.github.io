@@ -12,7 +12,7 @@ function ContactMe() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('Sending...');
+    setStatus('Sending... This make take a couple minutes.');
 
     try {
       const response = await fetch('https://backend-9v05.onrender.com/api/contact', {
