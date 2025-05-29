@@ -420,7 +420,7 @@ nav a.active-link {
 
 
 /* Responsive: Small screens */
-@media (max-width: 1200px) { /* was 400px*/
+@media (max-width: 768px) { /* was 400px*/
   
   body {
     background-image: url('./assets/Background-mobile-two.png');

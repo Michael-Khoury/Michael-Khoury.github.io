@@ -3,6 +3,11 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/mk-logo.png';
 
+
+// Global event dispatcher for section highlight override
+window.overrideActiveSection = null;
+
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeScrollSection, setActiveScrollSection] = useState('home');
@@ -25,11 +30,19 @@ function Navbar() {
     return () => window.removeEventListener('click', handleClickOutside);
   }, []);
 
-  useEffect(() => {
-  if (location.pathname === '/' && location.state?.scrollTo === 'about') {
-    setActiveScrollSection('about');
-  }
-}, [location]);
+useEffect(() => {
+  // Allows Home.js to manually trigger the nav highlight
+  window.overrideActiveSection = (section) => {
+    if (location.pathname === '/') {
+      setActiveScrollSection(section);
+    }
+  };
+
+  return () => {
+    window.overrideActiveSection = null;
+  };
+}, [location.pathname]);
+
 
   // Track scroll position to toggle between Home and About Me
   useEffect(() => {
@@ -55,18 +68,28 @@ function Navbar() {
   };
 }, [location.pathname]);
 
-  const handleLinkClick = (e, path) => {
-    setIsOpen(false);
-    const targetHash = path === '/' ? '#/' : `#${path}`;
-    const currentHash = window.location.hash;
-    if (currentHash === targetHash) {
-      e.preventDefault();
-      setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }, 0);
-    }
-  };
+const handleLinkClick = (e, path, overrideSection = null) => {
+  setIsOpen(false);
 
+  // If it's the same route, force scroll
+  const targetHash = path === '/' ? '#/' : `#${path}`;
+  const currentHash = window.location.hash;
+
+  if (currentHash === targetHash) {
+    e.preventDefault();
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 0);
+  }
+
+  // ✅ Clear override scrollTo state if navigating manually
+  if (overrideSection) {
+    setActiveScrollSection(overrideSection);
+    if (typeof window.overrideActiveSection === 'function') {
+      window.overrideActiveSection(overrideSection);
+    }
+  }
+};
   return (
     <nav className="navbar" ref={navRef}>
       <div className="navbar-left">
@@ -91,29 +114,37 @@ function Navbar() {
         <Link
           to="/"
           className={location.pathname === '/' && activeScrollSection === 'home' ? 'active-link' : ''}
-          onClick={(e) => handleLinkClick(e, '/')}
+          onClick={(e) => handleLinkClick(e, '/', 'home')}
         >
           Home
         </Link>
 
         <Link
-          to="/"
-          className={location.pathname === '/' && activeScrollSection === 'about' ? 'active-link' : ''}
-          onClick={(e) => {
-            e.preventDefault();
-            setIsOpen(false);
-            if (location.hash !== '#/') {
-              navigate('/', { state: { scrollTo: 'about' } });
-            } else {
-              const aboutSection = document.getElementById('about');
-              if (aboutSection) {
-                aboutSection.scrollIntoView({ behavior: 'smooth' });
-              }
-            }
-          }}
-        >
-          About Me
-        </Link>
+  to="/"
+  className={location.pathname === '/' && activeScrollSection === 'about' ? 'active-link' : ''}
+  onClick={(e) => {
+    e.preventDefault();
+    setIsOpen(false);
+
+    // ✅ Manually highlight About immediately
+    setActiveScrollSection('about');
+    if (typeof window.overrideActiveSection === 'function') {
+      window.overrideActiveSection('about');
+    }
+
+    if (location.hash !== '#/') {
+      navigate('/', { state: { scrollTo: 'about' } });
+    } else {
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }}
+>
+  About Me
+</Link>
+
 
         <Link
           to="/projects"

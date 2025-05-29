@@ -89,11 +89,19 @@ useEffect(() => {
     if (section) {
       setTimeout(() => {
         section.scrollIntoView({ behavior: 'smooth' });
+
+        // ✅ Notify the Navbar to highlight About Me
+        if (typeof window.overrideActiveSection === 'function') {
+          window.overrideActiveSection('about');
+        }
+
+        // Clear scroll intent so it doesn't repeat
         window.history.replaceState({}, '');
-      }, 100); // slight delay ensures DOM is rendered
+      }, 100);
     }
   }
 }, [location]);
+
 
 
   
