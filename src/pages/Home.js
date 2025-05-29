@@ -45,11 +45,21 @@ import pspiceIcon from '../assets/icons/pspice.png';
 import vscodeIcon from '../assets/icons/vscode.jpeg';
 import dvcIcon from '../assets/icons/dvc.jpeg';
 import simulinkIcon from '../assets/icons/simulink.jpeg';
-import quarcIcon from '../assets/icons/quarc.jpeg';
+//import quarcIcon from '../assets/icons/quarc.jpeg'; 
 import nodeIcon from '../assets/icons/node.png';
 import mongoIcon from '../assets/icons/mongo.png';
 import expressIcon from '../assets/icons/express.png';
 import restIcon from '../assets/icons/rest.png';
+import gnuradioIcon from '../assets/icons/gnuradio.png';
+import opencvIcon from '../assets/icons/opencv.png';
+import colabIcon from '../assets/icons/colab.png';
+import winscpIcon from '../assets/icons/winscp.jpg';
+import confluenceIcon from '../assets/icons/confluence.png';
+import linuxIcon from '../assets/icons/linux.png';
+import sdrIcon from '../assets/icons/sdr.jpg';
+import umlIcon from '../assets/icons/uml.jpg';
+import dafnyIcon from '../assets/icons/dafny.jpg';
+
 import githubpagesIcon from '../assets/icons/githubpages.png';
 import reactrouterIcon from '../assets/icons/reactrouter.png'; 
 import { useLocation } from 'react-router-dom';
@@ -237,7 +247,7 @@ useEffect(() => {
         className={activeTab === 'software' ? 'active' : ''}
         onClick={() => setActiveTab('software')}
       >
-        Software
+        Technologies
       </button>
     </div>
 
@@ -260,6 +270,8 @@ useEffect(() => {
         <li className="tech-item"><img src={yamlIcon} alt="SQL" className="tech-icon" />YAML</li>
         <li className="tech-item"><img src={xmlIcon} alt="SQL" className="tech-icon" />XML/JSX</li>
         <li className="tech-item"><img src={jsonIcon} alt="SQL" className="tech-icon" />JSON</li>
+        <li className="tech-item"><img src={umlIcon} alt="React" className="tech-icon" />UML</li>
+        <li className="tech-item"><img src={dafnyIcon} alt="React" className="tech-icon" />Dafny</li>
         
         
         </ul>
@@ -272,22 +284,20 @@ useEffect(() => {
           <li className="tech-item"><img src={mongoIcon} alt="Python" className="tech-icon" />MongoDB / Mongoose</li>
           <li className="tech-item"><img src={expressIcon} alt="Python" className="tech-icon" />Express.js</li>
           <li className="tech-item"><img src={restIcon} alt="Python" className="tech-icon" />REST APIs</li>
-
-          
           <li className="tech-item"><img src={pytorchIcon} alt="Python" className="tech-icon" />Pytorch</li>
-
           <li className="tech-item"><img src={matplotlibIcon} alt="Python" className="tech-icon" />Matplotlib</li>
           <li className="tech-item"><img src={dotnetIcon} alt="Python" className="tech-icon" />.NET</li>
           <li className="tech-item"><img src={numpyIcon} alt="Python" className="tech-icon" />NumPy</li>
           <li className="tech-item"><img src={unityIcon} alt="Python" className="tech-icon" />Unity</li>
           <li className="tech-item"><img src={pandasIcon} alt="Python" className="tech-icon" />Pandas</li>
+          <li className="tech-item"><img src={gnuradioIcon} alt="Python" className="tech-icon" />GNU Radio</li>
+          <li className="tech-item"><img src={opencvIcon} alt="Python" className="tech-icon" />OpenCV</li>
           <li className="tech-item"><img src={openpyxlIcon} alt="Python" className="tech-icon" />openpyxl</li>
           <li className="tech-item"><img src={shIcon} alt="Python" className="tech-icon" />Shell Scripting (sh)</li>
           <li className="tech-item"><img src={openaiIcon} alt="Python" className="tech-icon" />OpenAI API</li>
           <li className="tech-item"><img src={mlflowIcon} alt="Python" className="tech-icon" />MLflow</li>
           <li className="tech-item"><img src={condaIcon} alt="Python" className="tech-icon" />Conda</li>
-          <li className="tech-item"><img src={puttyIcon} alt="Python" className="tech-icon" />PuTTy</li>
-          <li className="tech-item"><img src={dsaIcon} alt="Python" className="tech-icon" />DSA/OOP</li>
+
 
         </ul>
       )}
@@ -299,6 +309,15 @@ useEffect(() => {
           <li className="tech-item"><img src={reactrouterIcon} alt="Python" className="tech-icon" />React Router</li>
           <li className="tech-item"><img src={dvcIcon} alt="Python" className="tech-icon" />Data Version Control</li>
           <li className="tech-item"><img src={vscodeIcon} alt="Python" className="tech-icon" />Visual Studio Code</li>
+          <li className="tech-item"><img src={colabIcon} alt="Python" className="tech-icon" />Google Colab</li>
+          <li className="tech-item"><img src={winscpIcon} alt="Python" className="tech-icon" />WinSCP</li>
+          <li className="tech-item"><img src={puttyIcon} alt="Python" className="tech-icon" />PuTTy</li>
+          <li className="tech-item"><img src={confluenceIcon} alt="Python" className="tech-icon" />Confluence</li>
+          
+          <li className="tech-item"><img src={linuxIcon} alt="Python" className="tech-icon" />Linux</li>
+          <li className="tech-item"><img src={sdrIcon} alt="Python" className="tech-icon" />SDR</li>
+
+
           <li className="tech-item"><img src={zapierIcon} alt="Python" className="tech-icon" />Zapier</li>
           <li className="tech-item"><img src={pspiceIcon} alt="Python" className="tech-icon" />Pspice</li>
           <li className="tech-item"><img src={simulinkIcon} alt="Python" className="tech-icon" />Simulink</li>
@@ -307,7 +326,9 @@ useEffect(() => {
           <li className="tech-item"><img src={notionIcon} alt="Python" className="tech-icon" />Notion </li>
           <li className="tech-item"><img src={sapIcon} alt="Python" className="tech-icon" />SAP</li>
           <li className="tech-item"><img src={quartusIcon} alt="Python" className="tech-icon" />Quartus Modelsim</li>
-          <li className="tech-item"><img src= {quarcIcon} alt="Python" className="tech-icon" />Quanser QUARC</li>
+          
+          <li className="tech-item"><img src={dsaIcon} alt="Python" className="tech-icon" />DSA/OOP</li>
+          
         </ul>
       )}
     </div>
