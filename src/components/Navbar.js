@@ -25,31 +25,35 @@ function Navbar() {
     return () => window.removeEventListener('click', handleClickOutside);
   }, []);
 
+  useEffect(() => {
+  if (location.pathname === '/' && location.state?.scrollTo === 'about') {
+    setActiveScrollSection('about');
+  }
+}, [location]);
+
   // Track scroll position to toggle between Home and About Me
   useEffect(() => {
-    const aboutSection = document.getElementById('about');
+  const aboutSection = document.getElementById('about');
 
-    if (!aboutSection) return;
+  if (!aboutSection || location.pathname !== '/') return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setActiveScrollSection('about');
-        } else {
-          setActiveScrollSection('home');
-        }
-      },
-      {
-        threshold: 0.6, // At least 60% visible
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setActiveScrollSection('about');
+      } else {
+        setActiveScrollSection('home');
       }
-    );
+    },
+    { threshold: 0.6 }
+  );
 
-    observer.observe(aboutSection);
+  observer.observe(aboutSection);
 
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  return () => {
+    observer.disconnect();
+  };
+}, [location.pathname]);
 
   const handleLinkClick = (e, path) => {
     setIsOpen(false);
