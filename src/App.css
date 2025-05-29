@@ -37,17 +37,17 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
+/*nav a:hover {
   text-decoration: underline;
   color: royalblue;
   text-underline-offset: 6px;
-}
+} */
 
 nav a.active-link {
   text-decoration: underline !important;
   text-underline-offset: 6px;
-  color: royalblue; /* reinforces branding */
-}
+  color: royalblue; /* reinforces branding */}
+ 
 
 .page-container {
   display: flex;
