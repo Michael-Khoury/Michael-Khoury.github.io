@@ -1,9 +1,19 @@
 // pages/Resume.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Resume.css';
-import resumePDF from '../assets/michaelkhouryresume.pdf'; 
+import resumePDF from '../assets/michaelkhouryresume.pdf';
 
 function Resume() {
+  const [pdfSrc, setPdfSrc] = useState(resumePDF);
+
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      setPdfSrc(resumePDF + '#view=FitH');
+    } else {
+      setPdfSrc(resumePDF);
+    }
+  }, []);
+
   return (
     <div className="page-container no-padding">
       <div className="projects-header">
@@ -15,7 +25,7 @@ function Resume() {
 
       <div className="resume-container">
         <iframe
-          src={resumePDF}
+          src={pdfSrc}
           title="Michael Khoury Resume"
           className="resume-viewer"
           frameBorder="0"
