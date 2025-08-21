@@ -220,13 +220,9 @@ useEffect(() => {
     <div className="about-text">
       <h2>About Me</h2>
       <p>
-      I’m a fourth-year Computer Engineering student (B.Eng) at Memorial University of Newfoundland (Class of 2027), based in St. John’s, NL.
-  My experience spans a range of roles and sectors—from working at the multinational corporation Vale, to developing AI solutions for the non-profit NLEats, to supporting peers as a Supplemental Instruction (SI) Leader.
-  Most recently, I’ve been working as a Computer Engineering Intern focused on AI/ML at C-CORE.
+I’m a fourth-year Computer Engineering student (B.Eng) at Memorial University of Newfoundland (Class of 2027), based in St. John’s, NL. My work experience spans both industry and research, including roles at Vale Canada, NL Eats, and as a Supplemental Instruction (SI) Leader. Most recently, I worked as a Systems Engineering Student at C-CORE, where I developed real-time C++/Python signal processing blocks in GNU Radio and built AI/ML models for radar target detection.
   <br /><br />
-  My interest in AI and machine learning began during part-time research with the Department of Computer Science and has grown through hands-on development work.
-  I’m also open to opportunities across the broader field of computer engineering, including software development, embedded systems, and FPGA design.
-
+ My interest in machine learning started during part-time research with the Department of Computer Science and has since grown into applied development work across software, embedded systems, and signal processing. I’m also eager to explore broader areas of computer engineering such as FPGA design and scalable backend systems.
   Outside of work and academics, I enjoy going to the gym, listening to music, spending time with friends, playing football (soccer), hiking, and exploring new places.
   <br /><br />
   Feel free to use the menu at the top right to explore my site — enjoy!
