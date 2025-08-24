@@ -9,7 +9,7 @@ function Resume() {
       <div className="projects-header">
         <h1 className="greeting">Resume</h1>
         <p className="typed-subline">
-          Please find below my resume, up to date as of June 2025.
+          Please find below my resume, up to date as of August 2025.
         </p>
       </div>
 
