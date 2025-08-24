@@ -279,12 +279,11 @@ I’m a fourth-year Computer Engineering student (B.Eng) at Memorial University 
         <li className="tech-item"><img src={vhdlIcon} alt="SQL" className="tech-icon" />VHDL</li>
         <li className="tech-item"><img src={matlabIcon} alt="HTML/CSS" className="tech-icon" />Matlab</li>
         <li className="tech-item"><img src={bashIcon} alt="SQL" className="tech-icon" />Bash</li>
-        <li className="tech-item"><img src={markdownIcon} alt="SQL" className="tech-icon" />Markdown</li>
         <li className="tech-item"><img src={yamlIcon} alt="SQL" className="tech-icon" />YAML</li>
         <li className="tech-item"><img src={xmlIcon} alt="SQL" className="tech-icon" />XML/JSX</li>
         <li className="tech-item"><img src={jsonIcon} alt="SQL" className="tech-icon" />JSON</li>
         <li className="tech-item"><img src={umlIcon} alt="React" className="tech-icon" />UML</li>
-        {/* <li className="tech-item"><img src={dafnyIcon} alt="React" className="tech-icon" />Dafny</li> */}
+        <li className="tech-item"><img src={dafnyIcon} alt="React" className="tech-icon" />Dafny</li>
         
         
         </ul>
@@ -342,7 +341,7 @@ I’m a fourth-year Computer Engineering student (B.Eng) at Memorial University 
           <li className="tech-item"><img src={notionIcon} alt="Python" className="tech-icon" />Notion </li>
           <li className="tech-item"><img src={sapIcon} alt="Python" className="tech-icon" />SAP</li>
           <li className="tech-item"><img src={quartusIcon} alt="Python" className="tech-icon" />Quartus Modelsim</li>
-          
+          <li className="tech-item"><img src={markdownIcon} alt="SQL" className="tech-icon" />Markdown</li>
           <li className="tech-item"><img src={dsaIcon} alt="Python" className="tech-icon" />DSA/OOP</li>
           
         </ul>
