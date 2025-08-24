@@ -547,7 +547,10 @@ html {
 .tech-item:nth-child(18) { animation-delay: 0.9s; }
 .tech-item:nth-child(19) { animation-delay: 0.95s; }
 .tech-item:nth-child(20) { animation-delay: 1s; }
-
+.tech-item:nth-child(21) { animation-delay: 1.05s; }
+.tech-item:nth-child(22) { animation-delay: 1.1s; }
+.tech-item:nth-child(23) { animation-delay: 1.15s; }
+.tech-item:nth-child(24) { animation-delay: 1.2s; }
 
 
 @keyframes slideInFromLeft {
