@@ -59,6 +59,14 @@ import linuxIcon from '../assets/icons/linux.png';
 import sdrIcon from '../assets/icons/sdr.jpg';
 import umlIcon from '../assets/icons/uml.jpg';
 import dafnyIcon from '../assets/icons/dafny.jpg';
+import javaIcon from '../assets/icons/java.png';
+import springbootIcon from '../assets/icons/springboot.png';
+import postgresIcon from '../assets/icons/postgres.png';
+import postmanIcon from '../assets/icons/postman.png';
+import apacheIcon from '../assets/icons/apachespark.png';
+import awsIcon from '../assets/icons/aws.png';
+
+
 
 import githubpagesIcon from '../assets/icons/githubpages.png';
 import reactrouterIcon from '../assets/icons/reactrouter.png'; 
@@ -145,7 +153,7 @@ useEffect(() => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
           } else {
-            entry.target.classList.remove('visible'); // <-- ✨ allow repeated fade-ins
+            entry.target.classList.remove('visible'); 
           }
         });
       },
@@ -262,6 +270,7 @@ I’m a fourth-year Computer Engineering student (B.Eng) at Memorial University 
         <li className="tech-item"><img src={cppIcon} alt="C++" className="tech-icon" />C++</li>
         <li className="tech-item"><img src={cIcon} alt="C" className="tech-icon" />C</li>
         <li className="tech-item"><img src={csharpIcon} alt="C#" className="tech-icon" />C#</li>
+        <li className="tech-item"><img src={javaIcon} alt="Java" className="tech-icon" />Java</li>
         <li className="tech-item"><img src={jsIcon} alt="JavaScript" className="tech-icon" />JavaScript</li>
         <li className="tech-item"><img src={htmlIcon} alt="HTML/CSS" className="tech-icon" />HTML</li>
         <li className="tech-item"><img src={cssIcon} alt="HTML/CSS" className="tech-icon" />CSS</li>
@@ -275,7 +284,7 @@ I’m a fourth-year Computer Engineering student (B.Eng) at Memorial University 
         <li className="tech-item"><img src={xmlIcon} alt="SQL" className="tech-icon" />XML/JSX</li>
         <li className="tech-item"><img src={jsonIcon} alt="SQL" className="tech-icon" />JSON</li>
         <li className="tech-item"><img src={umlIcon} alt="React" className="tech-icon" />UML</li>
-        <li className="tech-item"><img src={dafnyIcon} alt="React" className="tech-icon" />Dafny</li>
+        {/* <li className="tech-item"><img src={dafnyIcon} alt="React" className="tech-icon" />Dafny</li> */}
         
         
         </ul>
@@ -288,6 +297,8 @@ I’m a fourth-year Computer Engineering student (B.Eng) at Memorial University 
           <li className="tech-item"><img src={mongoIcon} alt="Python" className="tech-icon" />MongoDB / Mongoose</li>
           <li className="tech-item"><img src={expressIcon} alt="Python" className="tech-icon" />Express.js</li>
           <li className="tech-item"><img src={restIcon} alt="Python" className="tech-icon" />REST APIs</li>
+          <li className="tech-item"><img src={springbootIcon} alt="Python" className="tech-icon" />Spring Boot</li>
+          <li className="tech-item"><img src={postgresIcon} alt="Python" className="tech-icon" />PostgreSQL</li>
           <li className="tech-item"><img src={pytorchIcon} alt="Python" className="tech-icon" />Pytorch</li>
           <li className="tech-item"><img src={matplotlibIcon} alt="Python" className="tech-icon" />Matplotlib</li>
           <li className="tech-item"><img src={dotnetIcon} alt="Python" className="tech-icon" />.NET</li>
@@ -317,10 +328,11 @@ I’m a fourth-year Computer Engineering student (B.Eng) at Memorial University 
           <li className="tech-item"><img src={winscpIcon} alt="Python" className="tech-icon" />WinSCP</li>
           <li className="tech-item"><img src={puttyIcon} alt="Python" className="tech-icon" />PuTTy</li>
           <li className="tech-item"><img src={confluenceIcon} alt="Python" className="tech-icon" />Confluence</li>
-          
+          <li className="tech-item"><img src={apacheIcon} alt="Python" className="tech-icon" />Apache Spark</li>
           <li className="tech-item"><img src={linuxIcon} alt="Python" className="tech-icon" />Linux</li>
           <li className="tech-item"><img src={sdrIcon} alt="Python" className="tech-icon" />SDR</li>
-
+          <li className="tech-item"><img src={postmanIcon} alt="Python" className="tech-icon" />Postman</li>
+          <li className="tech-item"><img src={awsIcon} alt="Python" className="tech-icon" />AWS</li>
 
           <li className="tech-item"><img src={zapierIcon} alt="Python" className="tech-icon" />Zapier</li>
           <li className="tech-item"><img src={pspiceIcon} alt="Python" className="tech-icon" />Pspice</li>
