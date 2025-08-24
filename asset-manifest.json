@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fe94f5ad.css",
-    "main.js": "/static/js/main.d8798a1b.js",
+    "main.js": "/static/js/main.c6b7a22e.js",
     "static/media/Background-mobile-two.png": "/static/media/Background-mobile-two.0829a41e3fdb7a89c2a5.png",
     "static/media/Background.png": "/static/media/Background.273cb0b20d97e65dd7c5.png",
     "static/media/tower-defense.png": "/static/media/tower-defense.2ad65b9b6bdf512ddf47.png",
@@ -16,10 +16,10 @@
     "static/media/github.png": "/static/media/github.c53739c8dc1501f16b88.png",
     "index.html": "/index.html",
     "main.fe94f5ad.css.map": "/static/css/main.fe94f5ad.css.map",
-    "main.d8798a1b.js.map": "/static/js/main.d8798a1b.js.map"
+    "main.c6b7a22e.js.map": "/static/js/main.c6b7a22e.js.map"
   },
   "entrypoints": [
     "static/css/main.fe94f5ad.css",
-    "static/js/main.d8798a1b.js"
+    "static/js/main.c6b7a22e.js"
   ]
 }
