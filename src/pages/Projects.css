@@ -64,6 +64,7 @@
 .color3 { background-color: #C8E6C9; }  /* light green */
 .color4 { background-color: #D1C4E9; }  /* light purple */
 .color5 { background-color: #FFCDD2; }  /* light pink */
+.color6 { background-color: #FFABAB; }  /* light red */
 
 /* Responsive */
 @media (max-width: 768px) {
