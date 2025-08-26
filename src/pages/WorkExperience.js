@@ -23,7 +23,7 @@ function WorkExperience() {
           <p className="date-range"><em>May 2025 – Present</em></p>
 
             <p>
-          Currently working at C-CORE on advanced R&D projects involving machine learning, signal processing, and real-time system development. My contributions include designing and training machine learning models using Python and PyTorch, developing and optimizing signal processing algorithms using Python and C++ for target detection in radar data, and building SDR-based workflows with tools like Gnuradio. I also work on hardware-software integration, including C++ module development, and system-level optimization to improve performance metrics such as range and signal-to-noise ratio. This role spans across embedded systems, algorithm design, and applied AI, giving me hands-on experience with both low-level and high-level engineering workflows.
+          During my work term at C-CORE, I worked on advanced R&D projects involving machine learning, signal processing, and real-time system development. My contributions include designing and training machine learning models using Python and PyTorch, developing and optimizing signal processing algorithms using Python and C++ for target detection in radar data, and building SDR-based workflows with tools like Gnuradio. I also work on hardware-software integration, including C++ module development, and system-level optimization to improve performance metrics such as range and signal-to-noise ratio. This role spans across embedded systems, algorithm design, and applied AI, giving me hands-on experience with both low-level and high-level engineering workflows.
         </p>
 
 
@@ -37,7 +37,7 @@ function WorkExperience() {
             <span>pandas</span>
             <span>C++</span>
             <span>Bash / Shell</span>
-            <span>VHDL</span>
+            <span>Linux</span>
             <span>Gnuradio</span>
             <span>Matplotlib</span>
             <span>Embedded Systems</span>
@@ -46,13 +46,11 @@ function WorkExperience() {
             <span>Algorithm design</span>
             <span>Image Processing</span>
             <span>Software Defined Radio</span>
-            <span>Data pipeline scripting</span>
-            <span>Data Analysis</span>
             <span>Machine Learning</span>
             <span>Google Colab</span>
             <span>Signal Processing</span>
             <span>System-level design</span>
-            <span>Computer-aided design</span>
+            
             
           </div>
         </div>
