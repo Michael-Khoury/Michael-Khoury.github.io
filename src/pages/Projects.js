@@ -17,7 +17,7 @@ function Projects() {
 <div className="project-block color6 ">
         <h2>BANK TRANSACTION MONITORING SYSTEM</h2>
         <p>
-          Currently building a scalable backend application for real-time fraud detection in financial transactions using Java Spring Boot and PostgreSQL, structured with Maven. Designed relational data models with entity relationships and implemented ORM mapping. Exposed functionality through layered RESTful APIs and validated endpoints with Postman using JSON payloads. Integrated Apache Spark for batch analytics of large-scale transactions, deployed the system to AWS EC2 with Amazon RDS.
+          Currently building a scalable backend application for real-time fraud detection in financial transactions using Java, Spring Boot and PostgreSQL, structured with Maven. Designed relational data models with entity relationships and implemented ORM mapping. Exposed functionality through layered RESTful APIs and validated endpoints with Postman using JSON payloads. Integrated Apache Spark for batch analytics of large-scale transactions, deployed the system to AWS EC2 with Amazon RDS.
         </p>
 
         <p className="tech-heading">Skills or Technologies I used:</p>
@@ -32,13 +32,7 @@ function Projects() {
           <span>Amazon RDS</span>
           <span>Postman</span>
           <span>JSON</span>
-          <span>React Hooks</span>
-          <span>Nodemailer</span>
-          <span>CORS</span>
-          <span>Render</span>
-          <span>dotenv</span>
-          <span>Github Pages</span>
-          <span>Media Queries</span>
+ 
         </div>
         {/* <a
   href="https://github.com/Michael-Khoury/my-portfolio"
