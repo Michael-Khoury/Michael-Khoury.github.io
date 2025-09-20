@@ -135,3 +135,10 @@
   background-color: #444c56;
 }
 
+.date-range {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}

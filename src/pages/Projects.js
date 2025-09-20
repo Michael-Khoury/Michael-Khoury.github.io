@@ -16,6 +16,7 @@ function Projects() {
 
 <div className="project-block color6 ">
         <h2>BANK TRANSACTION MONITORING SYSTEM</h2>
+        <p className="date-range"><em>July 2025 – Present</em></p>
         <p>
           Currently building a scalable backend application for real-time fraud detection in financial transactions using Java, Spring Boot and PostgreSQL, structured with Maven. Designed relational data models with entity relationships and implemented ORM mapping. Exposed functionality through layered RESTful APIs and validated endpoints with Postman using JSON payloads. Integrated Apache Spark for batch analytics of large-scale transactions, deployed the system to AWS EC2 with Amazon RDS.
         </p>
@@ -48,6 +49,7 @@ function Projects() {
 
       <div className="project-block color1 ">
         <h2>PORTFOLIO WEBSITE</h2>
+        <p className="date-range"><em>May 2025 – June 2025</em></p>
         <p>
           This very website! Built from scratch as a full-stack application using React.js (with JSX) for the frontend and Node.js/Express.js for the backend. 
           The frontend includes scroll-aware routing, animated text, fade-in-on-scroll effects, mobile-optimized background behavior, and modular components such as a responsive Navbar, Footer, and ScrollToTop.
@@ -93,6 +95,7 @@ function Projects() {
 
       <div className="project-block color3 ">
         <h2>UNITY TOWER DEFENSE GAME</h2>
+        <p className="date-range"><em>January 2025 – April 2025</em></p>
         <p>
           Developed a polished 2D tower defense game in Unity with two teammates as part of a software design course during my fifth of eight academic semesters in my computer engineering degree.
           Features include an endless wave system, diverse enemy types with unique behaviors, and several strategically distinct towers with powerful abilities (e.g., splash damage, burn effects, curses).
@@ -118,6 +121,7 @@ function Projects() {
 
       <div className="project-block color2">
         <h2>PYTHON ATTENDANCE TRACKER</h2>
+        <p className="date-range"><em>September 2024 – December 2024</em></p>
         <p>
           Self-initiated during a work term to streamline attendance tracking for myself, my supervisor, and future SI Leaders.
           Automated tracking for over 50 students per session using Python with pandas and openpyxl.
@@ -143,6 +147,7 @@ function Projects() {
 
       <div className="project-block color4 ">
         <h2>ML EXPERIMENT TRACKER</h2>
+        <p className="date-range"><em>June 2024 – August 2024</em></p>
         <p>
           Developed a Python script for integrating data version control (DVC) into machine learning workflows during my part time work as a Machine Learning Software Developer at VAC Lab.
           Achieved reproducible and efficient ML experiments using YAML configurations and MLflow.
@@ -166,6 +171,7 @@ function Projects() {
 
       <div className="project-block color5 ">
         <h2>CAR UI AND PROXIMITY SENSOR</h2>
+        <p className="date-range"><em>September 2022 – December 2022</em></p>
         <p>
           Designed a Python-based UI mimicking modern car features with an advanced proximity sensor system using Arduino as part of a first-year introduction to python programming course.
           Enhanced driver safety by integrating real-time sensor data visualization.

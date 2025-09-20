@@ -20,7 +20,7 @@ function WorkExperience() {
       <div className="experience-block color1">
         <div className="experience-left">
           <h2>C-CORE – Systems Engineering Student</h2>
-          <p className="date-range"><em>May 2025 – Present</em></p>
+          <p className="date-range"><em>May 2025 – August 2025</em></p>
 
             <p>
           During my work term at C-CORE, I worked on advanced R&D projects involving machine learning, signal processing, and real-time system development. My contributions include designing and training machine learning models using Python and PyTorch, developing and optimizing signal processing algorithms using Python and C++ for target detection in radar data, and building SDR-based workflows with tools like Gnuradio. I also work on hardware-software integration, including C++ module development, and system-level optimization to improve performance metrics such as range and signal-to-noise ratio. This role spans across embedded systems, algorithm design, and applied AI, giving me hands-on experience with both low-level and high-level engineering workflows.
